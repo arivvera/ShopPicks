@@ -1,0 +1,243 @@
+
+/**General**/
+html {
+    background-color: #040913;
+    font-family: Poppins, sans-serif;
+    color: #FFFFFF;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/**Top navigation bar**/
+.top-navbar{
+    display: inherit;
+    border: 0;
+    border-radius: 108px;
+    width: 60%;
+    margin-top: 71px;
+    padding: 32px;
+    background-color: #1F2123;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.top-navbar__items{
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    font-style: normal;
+
+}
+/**Different variants of big titles**/
+h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+h1.title-gradient{
+    background: linear-gradient(to right, #8200BA, #FD9E17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 87px;
+}
+
+/*
+ *Descriptive Text outside a block "zero bordered"
+ */
+.description_text__outer {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+}
+/*
+ *Descriptive Text outside a block "zero bordered"
+ */
+.title_text__outer {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+}
+
+/*
+ * Buttons are transparent and rounded in app
+ */
+.outer-buttons {
+    background-color: transparent;
+    border: solid 1px #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 39px;
+    padding: 9px 12px;
+    margin: 10px;
+}
+.outer-buttons:hover {
+    background-color: #9A299A;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 39px;
+    padding: 9px 12px;
+    margin: 10px;
+}
+
+/**Central boxes. Gradient in borders**/
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.box {
+    border-radius: 18px;
+    background-color: transparent;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    border: 3px solid;
+    background-clip: padding-box;
+    margin: 20px;
+}
+
+
+.left-box {
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+}
+
+.inner-box {
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+}
+
+.right-box {
+    border-image: linear-gradient(to right,  #830DBA, #FD9E17) 1;
+}
+
+.boxes-title {
+    color: #FFFFFF;
+}
+
+.boxes_text-description {
+    color: #FFFFFF;
+}
+/**********End of boxes styles******************/
+
+/*
+ * Remove text-shadow in selection highlight and sets color
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+  */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+a,
+a:visited {
+    text-decoration: underline;
+}
+
+a[href]::after {
+    content: " (" attr(href) ")";
+}
+
+abbr[title]::after {
+    content: " (" attr(title) ")";
+}
+
+.large-box {
+    display: flex;
+    background-color: #1F2123;
+    border-radius: 18px;
+    text-align: left;
+}
+.large-box__text {
+
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: left;
+}
