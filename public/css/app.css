@@ -27,6 +27,9 @@ body{
 
 }
 .top-navbar__items{
+    display: flex;
+    justify-content: space-evenly;
+    width: inherit;
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
     font-size: 16px;
@@ -34,6 +37,10 @@ body{
     line-height: 16px;
     font-style: normal;
 
+}
+
+.menu-item{
+    cursor: pointer;
 }
 /**Different variants of big titles**/
 h1 {
@@ -63,8 +70,14 @@ h1.title-gradient{
  */
 .title_text__outer {
     font-weight: bold;
-    font-size: 32px;
-    line-height: 41px;
+    font-size: 40px;
+    line-height: 85px;
+    text-align: center;
+}
+.title_text__bigger {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 65px;
     text-align: center;
 }
 
@@ -99,7 +112,7 @@ h1.title-gradient{
     border-radius: 18px;
     background-color: transparent;
     padding: 20px;
-    width: 30%;
+    width: 20%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
@@ -108,23 +121,16 @@ h1.title-gradient{
     margin: 20px;
 }
 
-
-.left-box {
+/* several elements have gradient color borders*/
+.border-gradient {
     border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
 }
 
-.inner-box {
-    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
-}
-
-.right-box {
-    border-image: linear-gradient(to right,  #830DBA, #FD9E17) 1;
-}
-
+/*titles of the boxes in the page*/
 .boxes-title {
     color: #FFFFFF;
 }
-
+/* color of text inside boxes */
 .boxes_text-description {
     color: #FFFFFF;
 }
@@ -144,50 +150,10 @@ h1.title-gradient{
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
-  */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
 
 /*
  * Remove default fieldset styles.
  */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
 
 
 /*
@@ -207,32 +173,14 @@ textarea {
     visibility: hidden;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-a,
-a:visited {
-    text-decoration: underline;
-}
-
-a[href]::after {
-    content: " (" attr(href) ")";
-}
-
-abbr[title]::after {
-    content: " (" attr(title) ")";
-}
-
+/* this is for slogan of the page */
 .large-box {
     display: flex;
     background-color: #1F2123;
     border-radius: 18px;
     text-align: left;
+    padding: 1rem;
 }
 .large-box__text {
 
@@ -241,3 +189,207 @@ abbr[title]::after {
     line-height: 41px;
     text-align: left;
 }
+
+/* bar with nav items or buttons to filter products */
+.product-filter {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    padding: 24px;
+    border: 0;
+    background-color: transparent;
+}
+/* when filters hovered or selected border is gradient*/
+.menu-item__gradient {
+    border: 2px solid transparent;
+    border-radius: 18px;
+    transition: border-image 0.3s;
+}
+
+.menu-item__gradient:hover {
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+}
+
+.carousel {
+    margin: 100px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.carousel-box {
+    width: 475px;
+    height: 640px;
+    border: 1px transparent;
+    border-radius: 18px;
+    background-color: #1F2123;
+    margin: 10px;
+    display: inherit;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.carousel-box:hover{
+    border: solid 1px;
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+}
+
+.carousel-box__button{
+    height: 58px;
+    width: 90%;
+    border: solid 1px transparent;
+    border-radius: 39px;
+    background-color: #404040;
+    padding: 4px 6px;
+    position: relative;
+    top: 550px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+/*section with courses or other advantage offering. It has text and image*/
+.section-offerings{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 773px;
+}
+.section-offerings__text{
+    width: 60%;
+    height: 100%;
+    margin-left: 10%;
+}
+/* this is a similar offering but for price section next */
+.section-offerings__pricing{
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.section-offerings__img{
+    height: 100%;
+    width: 30%;
+}
+
+.offering-paragraph{
+    text-align: left;
+    font-weight: 300;
+}
+.price-offering{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+}
+.price-offering__boxes{
+    height: 469px;
+    width: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pricing-box__button {
+    height: 58px;
+    width: 90%;
+    border: solid 1px transparent;
+    border-radius: 39px;
+    background-color: #404040;
+    padding: 4px 6px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+/* section to allow mail list creation with form: text edit and submit button */
+.mail-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 438px;
+    background-color: #0D1018;
+    border:solid 1px;
+    border-left: transparent;
+    border-right: transparent;
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+}
+
+.mail-list_form {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail-list__edit {
+    border: solid 1px #FFFFFF;
+    border-radius: 39px;
+    background-color: #0D1018;
+    margin: 10px;
+    height: 52px;
+    width: 557px;
+    text-align: center;
+}
+
+.button-submit {
+    border: solid 1px transparent;
+    border-radius: 39px;
+    background-color: #9A299A;
+    width: 128px;
+    height: 52px;
+    margin: 10px;
+}
+
+/* section for users opinion. It has some different boxes*/
+.section-opinions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.section-opinions__title {
+    background: linear-gradient(to right, #8200BA, #FD9E17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 86px;
+    width: 80%;
+}
+
+.opinion-boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.opinion-boxes__item {
+    width: 30%;
+    height: 469px;
+    background-color: #1F2123;
+    border: solid transparent;
+    border-radius: 18px;
+}
+
+/*footer*/
+.footer-section {
+    width: 100%;
+    height: 531px;
+    background-color: #0D1018;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ==========================================================================
+   Section Media Queries for Responsive Design.
+   ========================================================================== */
+/*phones and small screens*/
+@media only screen and (max-width: 34em) {
+
+}
+
