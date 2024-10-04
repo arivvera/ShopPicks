@@ -389,6 +389,38 @@ h1.title-gradient{
     justify-content: space-between;
 }
 
+.footer-block-paragraph {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 10%;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer-group-blocks {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-group-item {
+    display: flex;
+    flex-direction: column;
+    height: 264px;
+    width: 209px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.social-network-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    border: solid 1px;
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+
+}
+
+
 /* ==========================================================================
    Section Media Queries for Responsive Design.
    ========================================================================== */
@@ -396,4 +428,3 @@ h1.title-gradient{
 @media only screen and (max-width: 34em) {
 
 }
-
