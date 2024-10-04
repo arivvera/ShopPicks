@@ -1,0 +1,100 @@
+.container,
+.navbar,
+.navbar-a,
+.navbar-b,
+.navbar-links,
+.shopping-cart,
+.shopping-cart-indicator,
+.wishlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-a,
+.shopping-cart,
+.wishlist {
+    background: #1F2123;
+}
+
+.navbar {
+    justify-content: space-between;
+    margin-top: 71px;
+    gap: 19px;
+}
+
+.navbar-a {
+    gap: 58px;
+    height: 90px;
+    box-shadow: 0px 6px 40.7px rgba(0, 0, 0, 0.57);
+    border-radius: 108px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 19px 26px 19px 43px;
+    font-weight: 300;
+}
+
+.navbar-logo,
+.navbar-links {
+    color: #9C9E9F;
+}
+
+.navbar-links {
+    gap: 32px;
+}
+
+.link-home,
+.link-sign-up {
+    border-radius: 108px;
+}
+
+.link-home {
+    background: rgba(154, 41, 154, 0.25);
+    padding: 14px 20px 14px 22px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.link-sign-up {
+    color: #030703;
+    background: #F0EAF9;
+    padding: 14px 30.5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar-b {
+    gap: 11.5px;
+}
+
+.shopping-cart {
+    position: relative;
+    width: 46.6px;
+    height: 45.41px;
+    border-radius: 50%;
+}
+
+.shopping-cart-indicator {
+    position: absolute;
+    width: 18.57px;
+    height: 18.79px;
+    background: #9220A4;
+    color: #FFFFFF;
+    border-radius: 50%;
+    left: 69.29%;
+    right: 19.74%;
+    top: -15.49%;
+    bottom: 98.17%;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    text-align: center;
+}
+
+.wishlist {
+    width: 46.6px;
+    height: 45.41px;
+    border-radius: 50%;
+}
+
