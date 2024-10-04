@@ -5,7 +5,7 @@ Classes are created using xxxx-xxxx-xxxx naming convention or less words if no s
 From left to right: general to specific inner element or trait.
 Like 'section-opinions-title'.
 */
-html {
+.html-general {
     background-color: #040913;
     font-family: Poppins, sans-serif;
     color: #FFFFFF;
@@ -417,6 +417,7 @@ h1.title-gradient{
     padding: 5px;
     border: solid 1px;
     border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+    width: 50%; /* This property should be augmented as more social network icons are added*/
 
 }
 
