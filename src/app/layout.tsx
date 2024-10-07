@@ -1,5 +1,5 @@
 import "./globals.css";
-import Footer from "@/app/components/footer/Footer";
+import Footer from "@/app/components/Footer/Footer";
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'

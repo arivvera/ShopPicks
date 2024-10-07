@@ -1,5 +1,6 @@
 import React from 'react';
-import '../../../../public/css/app.css';
+import '../../globals.css';
+import './Footer.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookF, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 
@@ -12,6 +13,7 @@ const Footer: React.FC = () => {
                         captivating.
                         Our designs blend futuristic concepts with practical usability,
                         ensuring that every item is both visually stunning and highly functional.</p>
+                    <br />
                     <p>© 2024. All rights reserved.</p>
                 </div>
                 <div className="footer-group-blocks">
@@ -29,19 +31,23 @@ const Footer: React.FC = () => {
                         <p>Log in</p>
                         <p>Sign up</p>
                     </div>
-                    <div className="footer-group-item">
+                    <div className="footer-group-item" style={{width: "40%"}}>
                         <p>Address</p>
                         <p>919 S. Main Street Snowflake, AZ 85937</p>
                         <p>Phones (775) 747-7258</p>
-                        <div className="border-gradient social-network-icons">
+
+
+                        <div className="social-network-container">
+                            <div className="social-network-icons">
                             <span className="social-network-icon"><a href="https://www.facebook.com/ntsprintllc">
                                 <FontAwesomeIcon icon={faFacebookF} size={"1x"} />
                             </a></span>
-                            <span><a href="https://www.linkedin.com/company/ntsprint/posts/?feedView=all">
+                                <span><a href="https://www.linkedin.com/company/ntsprint/posts/?feedView=all">
                                 <FontAwesomeIcon icon={faLinkedinIn} size={"1x"} />
                             </a></span>
-                            <span className="hidden"><a href=""><i className="fa-brands fa-youtube"></i></a></span>
-                            <span className="hidden"><a href=""><i className="fa-brands fa-twitter"></i></a></span>
+                                <span className="hidden"><a href=""><i className="fa-brands fa-youtube"></i></a></span>
+                                <span className="hidden"><a href=""><i className="fa-brands fa-twitter"></i></a></span>
+                            </div>
                         </div>
 
 
