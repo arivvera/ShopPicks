@@ -26,6 +26,7 @@ import Navbar from "@/app/navbar/page";
 import { poppins } from "@/common/utils/fonts";
 //import localFont from "next/dist/compiled/@next/font/dist/local";
 import {Metadata} from "next";
+import OpinionBox from "@/app/components/OpinionBox/OpinionBox";
 
 export default function RootLayout({
   children,
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Navbar />
         {children}
+        <OpinionBox />
         <Footer />
       </body>
 

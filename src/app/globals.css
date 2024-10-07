@@ -376,39 +376,7 @@ h1.title-gradient{
   margin: 10px;
 }
 
-/* section for users opinion. It has some different boxes*/
-.section-opinions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-}
 
-.section-opinions-title {
-  background: linear-gradient(to right, #8200BA, #FD9E17);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 86px;
-  width: 80%;
-}
-
-.opinion-boxes {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.opinion-boxes-item {
-  width: 30%;
-  height: 469px;
-  background-color: #1F2123;
-  border: solid transparent;
-  border-radius: 18px;
-}
 
 
 
