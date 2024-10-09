@@ -52,7 +52,7 @@ export const sampleProducts = [
     },
     {
         id:7,
-        img: "sample3,png",
+        img: "sample3.png",
         eval: 4.8,
         price: 59.99,
         name: "Product 7",
