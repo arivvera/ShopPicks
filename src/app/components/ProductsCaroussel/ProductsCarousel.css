@@ -1,0 +1,110 @@
+
+.products-carousel-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+}
+.products-carousel {
+    margin: 10px;
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.carousel-box {
+    padding: 0.5rem;
+    width: 475px;
+    height: 640px;
+    border: 1px transparent;
+    border-radius: 18px;
+    background-color: #1F2123;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-box:hover{
+    border: solid 1px;
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+}
+
+.carousel-box-button{
+    height: 58px;
+    width: 90%;
+    border: solid 1px transparent;
+    border-radius: 39px;
+    background-color: #404040;
+    padding: 4px 6px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+.inner-box-block{
+    justify-content: flex-end;
+    margin-top: 0;
+}
+
+.products-carousel-img {
+    margin-top: 5%;
+    width: 100%;
+    height: 421px;
+    border-radius: 18px ;
+
+}
+
+.products-carousel-data {
+    width: 100%;
+    height: 169px;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.carousel-data-row1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+.carousel-data-row2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.products-carousel-favourite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.product-favourite-true {
+    width: 19px;
+    height: 18px;
+    background: url('assets/img/full-heart.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.product-favourite-false {
+    width: 19px;
+    height: 18px;
+    background: url('assets/img/empty-heart.svg') no-repeat center center;
+    background-size: contain;
+
+}
+.products-carousel-stars{
+    color: #FD9E17;
+}
