@@ -21,8 +21,6 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${roboto.variable} ${inter.variable}`}>
         <Navbar />
         {children}
-        <ProductsCarousel />
-        <OpinionBox />
         <Footer />
       </body>
     </html>

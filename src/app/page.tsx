@@ -1,3 +1,6 @@
+import {ProductsCarousel} from "@/app/components/ProductsCaroussel/ProductsCarousel";
+import OpinionBox from "@/app/components/OpinionBox/OpinionBox";
+
 import styles from "./page.module.css";
 import Header from "@/layout/home/header/header";
 import Factors from "@/layout/home/factor/factor";
@@ -18,6 +21,8 @@ export default function Home() {
         <Courses />
         <Pricing />
         <MailList />
+        <ProductsCarousel />
+        <OpinionBox />
       </div>
     </div>
   );

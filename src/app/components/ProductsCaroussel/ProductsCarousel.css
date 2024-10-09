@@ -94,14 +94,14 @@
 .product-favourite-true {
     width: 19px;
     height: 18px;
-    background: url('assets/img/full-heart.svg') no-repeat center center;
+    background: url('../../assets/images/ProductsCarousel/full-heart.svg') no-repeat center center;
     background-size: contain;
 }
 
 .product-favourite-false {
     width: 19px;
     height: 18px;
-    background: url('assets/img/empty-heart.svg') no-repeat center center;
+    background: url('../../assets/images/ProductsCarousel/empty-heart.svg') no-repeat center center;
     background-size: contain;
 
 }
