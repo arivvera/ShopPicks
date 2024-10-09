@@ -21,14 +21,14 @@
 }
 
 .opinion-boxes {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .opinion-boxes-item {
-    width: 30%;
+    width: 23%;
     height: 469px;
     background-color: #1F2123;
     border: solid transparent;
@@ -71,8 +71,8 @@
     border-radius: 50%;
 }
 .avatar-container-outer{
-    width: 113px;
-    height: 113px;
+    width: 95px;
+    height: 90px;
     background: rgba(152, 41, 152, 0.80);
     display: flex;
     align-items: center;
@@ -136,3 +136,6 @@
     color: rgba(152, 41, 152, 0.62);
 }
 
+.opinion-boxes-picture {
+    border-radius: 50%;
+}

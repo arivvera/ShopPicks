@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "next/image";
 interface OpinionProps {
     name: string;
     date: string;
     review: string;
     url:string;
 }
-const OpinionBoxInfo: React.FC<OpinionProps> = ({ name, date, review, url }) => {
+const OpinionBoxInfo: React.FC<OpinionProps> = ({ name, date, review, url}) => {
 
     return(
         <div className="opinion-boxes-item">
@@ -13,7 +14,13 @@ const OpinionBoxInfo: React.FC<OpinionProps> = ({ name, date, review, url }) => 
                 <div className="avatar-container-outer">
                     <div className="avatar-container-middle">
                         <div className="avatar-container-inner">
-                            <img src={url} alt="Avatar" className="avatar" />
+                            <Image
+                                src={`/sample/Users/img/${url}`}
+                                height={50}
+                                width={53}
+                                alt={"User picture"}
+                                className={"opinion-boxes-picture"}
+                            />
                         </div>
                     </div>
 

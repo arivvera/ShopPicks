@@ -10,9 +10,17 @@ import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 
 export const ProductsCarousel: React.FC = () => {
+    interface Product {
+        id: number;
+        img: string;
+        eval: number;
+        price: number;
+        name: string;
+        fav: boolean;
+    }
     // Function to make groups of 3
-    const groupItems = (items: any[], groupSize: number) => {
-        const groups = [];
+    const groupItems = (items: Product[], groupSize: number) => {
+        const groups:Product[][] = [];
         for (let i = 0; i < items.length; i += groupSize) {
             groups.push(items.slice(i, i + groupSize));
         }
@@ -44,7 +52,7 @@ export const ProductsCarousel: React.FC = () => {
                                                     <FontAwesomeIcon key={starIndex} icon={faStar} size={"1x"} />
                                                 ))}
                                             </div>
-                                            <div className={"products-carousel-price"}>{product.price}</div>
+                                            <div className={"products-carousel-price"}>$ {product.price}</div>
                                         </div>
                                         <div className={"carousel-data-row2"}>
                                             <div className={"products-carousel-name"}>{product.name}</div>
