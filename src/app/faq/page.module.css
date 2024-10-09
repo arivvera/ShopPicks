@@ -19,12 +19,18 @@
 }
 
 .list-answer{
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 20px;
 
 }
-li{
+.questions-section{
+    font-family: inherit;
+}
+.questions-section li {
     list-style: none;
 }
+
 
 .list-answer-pair{
     margin-bottom: 10px;
