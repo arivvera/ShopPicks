@@ -13,20 +13,20 @@ const OpinionBox: React.FC = () => {
             date: "2023-10-26",
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
                 "Maecenas sed diam eget risus varius blandit sit amet non magna.",
-            url:"https://xsgames.co/randomusers/avatar.php?g=male"
+            url:"9.jpg"
         },
         {
             name: "Jane Smith",
             date: "2024-01-25",
             review: "Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.",
-            url: "https://xsgames.co/randomusers/avatar.php?g=female"
+            url: "29.jpg"
         },
         {
             name: "Mike Simpson",
             date: "2024-01-25",
             review: "Ac feugiat ante. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. " +
                 "Fusce ac turpis quis ligula lacinia aliquet. Mauris lectus. Pellentesque eget nunc. ",
-            url:"https://xsgames.co/randomusers/avatar.php?g=male"
+            url:"67.jpg"
         }
 
     ];
