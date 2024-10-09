@@ -1,0 +1,49 @@
+.header,
+.header-ctas {
+    display: flex;
+}
+
+.header {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 104.5px;
+    margin-top: 79px;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 41px;
+    text-align: center;
+    max-width: 1396px;
+    margin-top: 26px;
+}
+
+.header-ctas {
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    margin-top: 40px;
+}
+
+.header-cta a { 
+    padding: 14px 24px;
+    border-radius: 39px;
+    text-align: center;
+}
+
+.header-cta-products a {
+    background: var(--universal-pink);
+    min-width: 208px;
+}
+
+.header-cta-courses a {
+    border: 1px solid #FFFFFF;
+    min-width: 200px;
+}
