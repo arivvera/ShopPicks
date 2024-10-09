@@ -28,7 +28,7 @@ export default function Navbar () {
                             <Link href={"/"}>About Us</Link>
                         </div>
                         <div className={styles.link}>
-                            <Link href={"/"}>FAQ</Link>
+                            <Link href={"/faq"}>FAQ</Link>
                         </div>
                         <div className={styles.link}>
                             <Link href={"/"}>Contact us</Link>
