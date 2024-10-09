@@ -52,7 +52,7 @@ export const ProductsCarousel: React.FC = () => {
                                                     <FontAwesomeIcon key={starIndex} icon={faStar} size={"1x"} />
                                                 ))}
                                             </div>
-                                            <div className={"products-carousel-price"}>$ {product.price}</div>
+                                            <div className={"products-carousel-price"}>{product.price}</div>
                                         </div>
                                         <div className={"carousel-data-row2"}>
                                             <div className={"products-carousel-name"}>{product.name}</div>
