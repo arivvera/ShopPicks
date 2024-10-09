@@ -1,0 +1,113 @@
+.pricing,
+.pricing-content,
+.pricing-plan,
+.pricing-plan-benefits ul,
+.pricing-plan-benefits ul li {
+    display: flex;
+}
+
+.pricing {
+    justify-content: center;
+    align-items: center;
+    margin-top: 153px;
+    padding-bottom: 160px;
+    gap: 30px;
+}
+
+.pricing-content {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pricing-title {
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 108.5px;
+}
+
+.pricing-text {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 41px;
+    max-width:  581px;
+    min-width: 581px;
+    margin-top: 35px;
+}
+
+.pricing-cta {
+    margin-top: 50px;
+}
+
+.pricing-cta a {
+    padding: 14px 24px;
+    border: 1px solid var(--universal-pink);
+    border-radius: 39px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.pricing-plan {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 475px;
+    background: var(--universal-gray);
+    padding: 51px 27px 45px 27px;
+    border-radius: 18px;
+}
+
+.pricing-plan-title {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.pricing-plan-price {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 28px;
+}
+
+.pricing-plan-benefits {
+    margin-top: 22px;
+}
+
+.pricing-plan-benefits ul {
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pricing-plan-benefits ul li {
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.pricing-plan-cta {
+    margin-top: 56px;
+    align-self: center;
+}
+
+.pricing-plan-cta a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 14px;
+    background: #404040;
+    border-radius: 39px;
+    font-family: var(--font-inter);
+    width: 421px;
+    text-align: center;
+}
+
+

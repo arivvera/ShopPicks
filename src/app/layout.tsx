@@ -1,6 +1,6 @@
 import "./globals.css";
-import Navbar from "@/app/navbar/page";
-import { poppins } from "../common/utils/fonts";
+import Navbar from "@/layout/home/navbar/navbar";
+import { poppins, roboto, inter } from "@/common/utils/fonts";
 
 export default function RootLayout({
   children,
@@ -10,7 +10,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={`${poppins.variable} ${roboto.variable} ${inter.variable}`}>
         <Navbar />
         {children}
       </body>

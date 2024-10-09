@@ -1,5 +1,7 @@
 :root {
   --background: #040913;
+  --universal-gray: #1F2123;
+  --universal-pink: #9A299A;
 }
 
 html,
@@ -9,13 +11,18 @@ body {
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
-  font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+}
+
+body,
+input,
+button {
+  font-family: var(--font-poppins), Helvetica, sans-serif;
+  color: #FFFFFF;
 }
 
 * {
@@ -27,4 +34,36 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  display: block;
+}
+
+img {
+  display: block;
+}
+
+.gradient-text-header {
+  background: linear-gradient(90.91deg, #820DBA 7.86%, #FD9E17 88.66%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-courses {
+  background: linear-gradient(90.56deg, #9A299A 7.75%, #F19026 88.91%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-pricing {
+  background: linear-gradient(90.56deg, #9A299A 7.75%, #FD9E17 88.91%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.frame-container {
+  max-width: 1580px;
+  margin-right: auto;
+  margin-left: auto;
 }
