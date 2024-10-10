@@ -30,7 +30,12 @@ export const ProductsCarousel: React.FC = () => {
     const groupedProducts = groupItems(sampleProducts, 3);
 
     return (
-        <Carousel showThumbs={false}>
+        <Carousel
+            showThumbs={false}
+            autoPlay={true}
+            emulateTouch={true}
+            stopOnHover={true}
+        >
             {groupedProducts.map((group, index) => (
                 <div  className={"products-carousel-group"}  key={index}>
                     {group.map((product) => (
@@ -52,7 +57,7 @@ export const ProductsCarousel: React.FC = () => {
                                                     <FontAwesomeIcon key={starIndex} icon={faStar} size={"1x"} />
                                                 ))}
                                             </div>
-                                            <div className={"products-carousel-price"}>{product.price}</div>
+                                            <div className={"products-carousel-price"}>$ {product.price}</div>
                                         </div>
                                         <div className={"carousel-data-row2"}>
                                             <div className={"products-carousel-name"}>{product.name}</div>

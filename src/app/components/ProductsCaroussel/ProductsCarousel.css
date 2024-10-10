@@ -43,6 +43,8 @@
     padding: 4px 6px;
     position: relative;
     font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
     color: #FFFFFF;
 }
 .inner-box-block{
@@ -107,4 +109,22 @@
 }
 .products-carousel-stars{
     color: #FD9E17;
+}
+
+.carousel.carousel-slider .control-arrow {
+    display: none;
+}
+.carousel .carousel-status{
+    display: none;
+}
+
+.products-carousel-name{
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.products-carousel-price{
+    font-size: 32px;
+    line-height: 32px;
 }
