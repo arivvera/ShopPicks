@@ -57,7 +57,7 @@
 .mail-list-form button {
     width: 128px;
     height: 52px;
-    background-color: var(--universal-pink);
+    background-color: var(--color-global-pink);
     border-radius: 39px;
     font-size: 16px;
     font-weight: 500;

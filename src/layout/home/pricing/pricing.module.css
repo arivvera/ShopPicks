@@ -40,7 +40,7 @@
 
 .pricing-cta a {
     padding: 14px 24px;
-    border: 1px solid var(--universal-pink);
+    border: 1px solid var(--color-global-pink);
     border-radius: 39px;
     font-size: 16px;
     font-weight: 500;
@@ -58,7 +58,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 475px;
-    background: var(--universal-gray);
+    background: var(--color-global-gray);
     padding: 51px 27px 45px 27px;
     border-radius: 18px;
 }

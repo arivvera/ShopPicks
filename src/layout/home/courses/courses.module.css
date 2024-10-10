@@ -79,7 +79,7 @@
 .poster-shape-2 {
     width: 368px;
     height: 267px;
-    background: var(--universal-pink);
+    background: var(--color-global-pink);
     bottom: 0;
     left: 298px;
 }
@@ -87,7 +87,7 @@
 .poster-shape-3 {
     width: 422px;
     height: 386px;
-    background: var(--universal-pink);
+    background: var(--color-global-pink);
     bottom: 290px;
     left: 807px;
 }

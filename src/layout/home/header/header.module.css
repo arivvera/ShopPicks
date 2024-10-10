@@ -39,7 +39,7 @@
 }
 
 .header-cta-products a {
-    background: var(--universal-pink);
+    background: var(--color-global-pink);
     min-width: 208px;
 }
 

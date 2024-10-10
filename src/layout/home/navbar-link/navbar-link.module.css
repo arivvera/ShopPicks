@@ -1,0 +1,25 @@
+.navbar-link {
+    font-size: 20px;
+    color: #9C9E9F;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.navbar-link a {
+    padding: 4px 10px;
+}
+
+.navbar-link-active {
+    border-radius: 108px;
+    background-color: var(--color-navbar-active-element);
+    font-weight: 300;
+    color: #FFFFFF;
+    box-shadow: 0 0 0 10px var(--color-navbar-active-element);
+}
+
+.navbar-link-inactive:hover {
+    border-radius: 108px;
+    background-color: var(--color-navbar-hover-element);
+    box-shadow: 0 0 0 10px var(--color-navbar-hover-element);
+}
