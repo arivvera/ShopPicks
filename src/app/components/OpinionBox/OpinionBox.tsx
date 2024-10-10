@@ -1,65 +1,61 @@
-
+'use client'
 import React from 'react';
 import '../../globals.css';
 import './OpinionBox.css';
 import OpinionBoxInfo from "@/app/components/OpinionBoxInfo/OpinionBoxInfo";
-import {timeAgo} from "@/common/utils/handleDate";
-
+import { timeAgo } from "@/common/utils/handleDate";
+import { sampleReviews } from "@/app/components/OpinionBox/sampleReviews";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const OpinionBox: React.FC = () => {
-    const sampleData = [
-        {
-            name: "John Doe",
-            date: "2023-10-26",
-            review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-                "Maecenas sed diam eget risus varius blandit sit amet non magna.",
-            url:"9.jpg"
-        },
-        {
-            name: "Jane Smith",
-            date: "2024-01-25",
-            review: "Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.",
-            url: "29.jpg"
-        },
-        {
-            name: "Mike Simpson",
-            date: "2024-01-25",
-            review: "Ac feugiat ante. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. " +
-                "Fusce ac turpis quis ligula lacinia aliquet. Mauris lectus. Pellentesque eget nunc. ",
-            url:"67.jpg"
-        }
+    interface Reviewer {
+        name: string;
+        date: string;
+        review: string;
+        url: string;
+    }
 
-    ];
+    // Function to make groups of 3
+    const groupItems = (items: Reviewer[], groupSize: number) => {
+        const groups: Reviewer[][] = [];
+        for (let i = 0; i < items.length; i += groupSize) {
+            groups.push(items.slice(i, i + groupSize));
+        }
+        return groups;
+    };
+
+    const groupedReviews = groupItems(sampleReviews, 3);
 
     return (
         <div className="section-opinions">
             <h1 className="section-opinions-title">Discover what people are saying about us</h1>
             <div className="opinion-boxes">
-                {sampleData.map((data, index) => (
-                    <OpinionBoxInfo
-                        key={index}
-                        name={data.name}
-                        date={timeAgo(data.date)}
-                        url={data.url}
-                        review={data.review}
-                    />
-                ))}
-            </div>
-            <div className={"opinion-section-navbar"}>
-                <div className={"opinion-navbar-link"}>.</div>
-                <div className={"opinion-navbar-link"}>.</div>
-                <div className={"opinion-navbar-link"}>.</div>
-                <div className={"opinion-navbar-link"}>.</div>
+                <Carousel
+                    showThumbs={false}
+                    autoPlay={false}
+                    emulateTouch={true}
+                    stopOnHover={true}
+                    infiniteLoop={true}
+                    interval={3000}
+                >
+                    {groupedReviews.map((group, index) => (
+                        <div key={index} className={"group-triple-reviews"}>
+                            {group.map((data) => (
+                                <OpinionBoxInfo
+                                    key={data.name} // Use a unique key for each item
+                                    name={data.name}
+                                    date={timeAgo(data.date)}
+                                    url={data.url}
+                                    review={data.review}
+                                />
+                            ))}
+                        </div>
+                    ))}
+                </Carousel>
             </div>
         </div>
     );
 };
 
 export default OpinionBox;
-
-
-
-
-
-
-

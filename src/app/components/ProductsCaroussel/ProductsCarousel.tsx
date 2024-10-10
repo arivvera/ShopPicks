@@ -35,6 +35,7 @@ export const ProductsCarousel: React.FC = () => {
             autoPlay={true}
             emulateTouch={true}
             stopOnHover={true}
+            infiniteLoop={true}
         >
             {groupedProducts.map((group, index) => (
                 <div  className={"products-carousel-group"}  key={index}>
