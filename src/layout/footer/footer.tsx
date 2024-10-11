@@ -25,7 +25,10 @@ const Footer: React.FC = () => {
 
                         <p>Our products</p>
                         <p>Courses</p>
+                        <Link href={"/about-us"}>
                         <p>About Us</p>
+                        </Link>
+
                         <Link href={"/faq"}>
                         <p>FAQ</p>
                         </Link>

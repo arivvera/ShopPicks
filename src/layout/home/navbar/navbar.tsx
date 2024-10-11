@@ -23,7 +23,7 @@ export default function Navbar () {
                         <NavbarLink href="/">Home</NavbarLink>
                         <NavbarLink href="/our-products">Our products</NavbarLink>
                         <NavbarLink href="/courses">Courses</NavbarLink>
-                        <NavbarLink href="/about">About Us</NavbarLink>
+                        <NavbarLink href="/about-us">About Us</NavbarLink>
                         <NavbarLink href="/faq">FAQ</NavbarLink>
                         <NavbarLink href="/contact-us">Contact us</NavbarLink>
                         <NavbarLink href="/log-in">Log in</NavbarLink>

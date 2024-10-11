@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import '../globals.css';
 import styles from './page.module.css';
 import FAQ from "@/app/components/Faq/faq";
+import MailList from "@/layout/home/mail-list/mail-list";
 
 const FaqPage: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -11,7 +12,7 @@ const FaqPage: React.FC = () => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
-    return (
+    return (<>
         <div className={styles["faq-page"]}>
             <h1 className={"title-gradient"}>Frequently Asked Questions</h1>
 
@@ -51,8 +52,11 @@ const FaqPage: React.FC = () => {
 
             <div className={styles["questions-section"]}>
                 <FAQ activeIndex={activeIndex} />
+
             </div>
         </div>
+    <MailList />
+        </>
     );
 };
 
