@@ -145,7 +145,8 @@
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 5%;
-
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .carousel.carousel-slider .control-arrow {
     display: none;
