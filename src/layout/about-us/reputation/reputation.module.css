@@ -1,0 +1,58 @@
+.reputation,
+.reputation-cards,
+.reputation-cards-a,
+.reputation-cards-b,
+.reputation-card {
+    display: flex;
+}
+
+.reputation {
+    flex-direction: column;
+    align-items: center;
+    gap: 77px;
+    padding-bottom: 66px;
+}
+
+.reputation-title {
+    margin-top: 73px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 86.5px;
+}
+
+.reputation-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.reputation-cards-a,
+.reputation-cards-b {
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 58px;
+}
+
+.reputation-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    width: 382px;
+    height: 148px;
+    padding: 41px 25px 41px 45px;
+    border-radius: 18px;
+    background-color: var(--color-global-gray);
+}
+
+.reputation-card-title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.reputation-card-text {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 35px;
+}

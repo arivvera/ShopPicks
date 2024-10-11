@@ -33,8 +33,7 @@
     border-radius: 18px;
     max-width: 341px;
     min-height: 207px;
-    padding-left: 27px;
-    padding-top: 38px;
+    padding: 38px 27px;
     background-color: var(--background);
 }
 

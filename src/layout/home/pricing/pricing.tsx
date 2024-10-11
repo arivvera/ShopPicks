@@ -51,7 +51,7 @@ export default function Pricing() {
         <div className={styles["pricing-container"]}>
             <div className={`${styles.pricing} frame-container`}>
                 <div className={styles["pricing-content"]}>
-                    <div className={`${styles["pricing-title"]} gradient-text-pricing`}>
+                    <div className={`${styles["pricing-title"]} gradient-text-3`}>
                         <p>
                             Pricing
                         </p>
