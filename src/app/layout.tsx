@@ -1,5 +1,5 @@
 import "./globals.css";
-import Footer from "@/app/components/Footer/Footer";
+import Footer from "@/layout/footer/footer";
 import Navbar from "@/layout/home/navbar/navbar";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { poppins, roboto, inter } from "@/common/utils/fonts";

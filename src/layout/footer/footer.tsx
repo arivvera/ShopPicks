@@ -1,13 +1,14 @@
 import React from 'react';
-import '../../globals.css';
-import './Footer.css';
+import '../../app/globals.css';
+import './footer.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookF, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
     return (
         <div>
-            <section className="footer-section html-general">
+            <section className="footer-section">
                 <div className="footer-block-paragraph">
                     <p>We are committed to offering products that are not just advanced but also aesthetically
                         captivating.
@@ -18,11 +19,19 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="footer-group-blocks">
                     <div className="footer-group-item">
-                        <p>Home</p>
+                        <Link href={"/"}>
+                            <p>Home</p>
+                        </Link>
+
                         <p>Our products</p>
                         <p>Courses</p>
+                        <Link href={"/about-us"}>
                         <p>About Us</p>
+                        </Link>
+
+                        <Link href={"/faq"}>
                         <p>FAQ</p>
+                        </Link>
                     </div>
                     <div className="footer-group-item">
                         <p>Contact us</p>

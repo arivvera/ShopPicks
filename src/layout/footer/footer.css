@@ -4,10 +4,12 @@
     width: 100%;
     height: 531px;
     padding: 10%;
-    background-color: #0D1018;
+    background-color:rgba(31, 33, 35, 0.31);
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+    font-size: 20px;
+    color: #9C9E9F;
 }
 
 .footer-block-paragraph {
@@ -15,7 +17,6 @@
     flex-direction: column;
     width: 40%;
     margin-right: auto;
-    font-size: 16px;
     line-height: 30px;
 }
 
@@ -29,8 +30,7 @@
     flex-direction: column;
     height: 264px;
     width: 30%;
-    font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
 }
 .social-network-icons{
     border-radius: 108px;
@@ -52,6 +52,6 @@
     align-items: center;
     padding: 2px;
     border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
-    background: linear-gradient(to right, #830DBA, #FD9E17); /* Borde degradado */
-    border-radius: 108px; /* Bordes curvos */
+    background: linear-gradient(to right, #830DBA, #FD9E17);
+    border-radius: 108px;
 }

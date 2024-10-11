@@ -1,60 +1,62 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import '../globals.css';
 import styles from './page.module.css';
+import FAQ from "@/app/components/Faq/faq";
+import MailList from "@/layout/home/mail-list/mail-list";
+
 const FaqPage: React.FC = () => {
-    return (
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+    const handleClick = (index: number) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
+
+    return (<>
         <div className={styles["faq-page"]}>
             <h1 className={"title-gradient"}>Frequently Asked Questions</h1>
-            <section className="questions-section">
-                <div className={`${styles["questions"]} boxes-text-description`}>
-                    <ul>
-                        <article className={styles["list-answer-pair"]}>
-                        <li className={styles["list-question"]}>What is your return policy?</li>
-                        <p className={styles[styles["list-answer"]]}>
-                            We accept returns within 30 days of purchase. Items must be in their original condition
-                                and packaging. Please contact our customer service for a return authorization.
-                        </p>
-                        </article>
-                        <article className={styles["list-answer-pair"]}>
-                        <li className={styles["list-question"]}>How do I track my order?</li>
-                        <p className={styles["list-answer"]}>
-                            Once your order has shipped, you will receive an email with a tracking number.
-                            You can use this number on our website to track the status of your orders .
-                        </p>
-                        </article>
-                        <article className={"list-answer-pair"}>
-                        <li className={styles["list-question"]}>Do you offer free shipping?</li>
-                        <p className={styles["list-answer"]}>
-                            Yes, we offer free shipping on orders over $50.
-                            For orders under that amount, a flat shipping fee will apply.
-                        </p>
-                        </article>
-                        <article className={"list-answer-pair"}>
-                        <li className={styles["list-question"]}>How do you protect my privacy?</li>
-                        <p className={styles["list-answer"]}>We take your privacy seriously.
-                            All personal information is encrypted and stored securely.
-                            We do not share your information with third parties without your consent.
-                        </p>
-                        </article>
-                        <article className={"list-answer-pair"}>
-                        <li className={styles["list-question"]}>Can I change or cancel my order?</li>
-                        <p className={styles["list-answer"]}>If you need to change or cancel your order,
-                            please contact us within 24 hours of placing your order. Once the order has been processed,
-                            we may not be able to make changes.
-                        </p>
-                        </article>
-                        <article className={"list-answer-pair"}>
-                        <li className={styles["list-question"]}>What payment methods do you accept?</li>
-                        <p className={styles["list-answer"]}>
-                            We accept all major credit cards, PayPal, and Apple Pay.
-                            You can choose your preferred payment method at checkout.
-                        </p>
-                        </article>
 
-                    </ul>
+            <section className={styles["faq-section"]}>
+                <div className={styles["nav-bar-section"]}>
+
+                    <a className={`${styles["faq-link-wrapper"]} ${activeIndex === 0 ? styles.active : ''}`}
+                       href="#" onClick={() => handleClick(0)}>
+                        <div className={styles["navbar-faq-link"]}>
+                            General
+                        </div>
+                    </a>
+
+                    <a className={`${styles["faq-link-wrapper"]} ${activeIndex === 1 ? styles.active : ''}`}
+                       href="#" onClick={() => handleClick(1)}>
+                        <div className={styles["navbar-faq-link"]}>
+                            Orders & Payments
+                        </div>
+                    </a>
+
+                    <a className={`${styles["faq-link-wrapper"]} ${activeIndex === 2 ? styles.active : ''}`}
+                       href="#" onClick={() => handleClick(2)}>
+                        <div className={styles["navbar-faq-link"]}>
+                            Shipping & Delivery
+                        </div>
+                    </a>
+
+                    <a className={`${styles["faq-link-wrapper"]} ${activeIndex === 3 ? styles.active : ''}`}
+                       href="#" onClick={() => handleClick(3)}>
+                        <div className={styles["navbar-faq-link"]}>
+                            Returns & Refunds
+                        </div>
+                    </a>
+
                 </div>
             </section>
+
+            <div className={styles["questions-section"]}>
+                <FAQ activeIndex={activeIndex} />
+
+            </div>
         </div>
+    <MailList />
+        </>
     );
 };
 
