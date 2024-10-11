@@ -6,12 +6,13 @@ import React from "react";
 export default function BorderWrapper({ 
   children, borderSize, borderColor
 } : { 
-  children: React.ReactNode, borderSize: number, borderColor: string
+  children: React.ReactNode, borderSize: number, borderColor?: string
 }) {
+  const defaultBackgroundColor = "linear-gradient(112.12deg, #830DBA 6.85%, #FD9E17 94.58%)";
   const childRef = useRef<HTMLDivElement>(null);
   const [borderProperties, setBorderProperties] = useState({
     padding: `${borderSize}px`,
-    background: borderColor || "transparent",
+    background: borderColor || defaultBackgroundColor,
     borderRadius: "0px",
   });
 

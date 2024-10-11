@@ -6,10 +6,6 @@ import { poppins, roboto, inter } from "@/common/utils/fonts";
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-//import localFont from "next/dist/compiled/@next/font/dist/local";
-import OpinionBox from "@/app/components/OpinionBox/OpinionBox";
-import {ProductsCarousel} from "@/app/components/ProductsCaroussel/ProductsCarousel";
-
 export default function RootLayout({
   children,
 }: Readonly<{

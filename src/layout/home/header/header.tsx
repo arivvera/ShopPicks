@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className={styles["header-container"]}>
         <div className={`${styles.header} frame-container`}>
-            <div className={`${styles["header-title"]} gradient-text-header`}>
+            <div className={`${styles["header-title"]} gradient-text-1`}>
                 <p>
                     Welcome to the
                 </p>

@@ -8,7 +8,7 @@ export default function Courses() {
         <div className={`${styles["courses-container"]}`}>
             <div className={`${styles.courses} frame-container`}>
                 <div className={styles["courses-content"]}>
-                    <div className={`${styles["courses-title"]} gradient-text-courses`}>
+                    <div className={`${styles["courses-title"]} gradient-text-2`}>
                         <p>
                             Course Offerings
                         </p>

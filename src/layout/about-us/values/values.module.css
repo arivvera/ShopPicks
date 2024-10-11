@@ -1,0 +1,77 @@
+.values,
+.values-cards,
+.values-card,
+.core-values-items,
+.core-values-item,
+.core-values-item-figure {
+    display: flex;
+}
+
+.values {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 81px;
+}
+
+.values-cards {
+    margin-top: 37px;
+    gap: 51px;
+}
+
+.values-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 11px;
+    border-radius: 18px;
+    max-width: 613.44px;
+    min-height: 320.52px;
+    padding: 48.8px 30px;
+    background-color: var(--background);
+}
+
+.values-card-head {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41px;
+}
+
+.values-card-body {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.core-values-title {
+    margin-top: 176.48px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 86.5px;
+    text-align: center;
+}
+
+.core-values-items {
+    justify-content: center;
+    margin-top: 60px;
+    gap: 68px;
+}
+
+.core-values-item {
+    flex-direction: column;
+    align-items: center;
+}
+
+.core-values-item-figure {
+    justify-content: center;
+    align-items: center;
+    width: 196px;
+    height: 196px;
+    border-radius: 50%;
+    background: linear-gradient(139.55deg, #9A299A 18.1%, #FD9E17 121.76%);
+}
+
+.core-values-item-name {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 86.5px;
+}

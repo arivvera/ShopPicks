@@ -24,7 +24,7 @@ export default function Navbar () {
                             <Link href={"/"}>Courses</Link>
                         </div>
                         <div className={styles["navbar-link"]}>
-                            <Link href={"/"}>About Us</Link>
+                            <Link href={"/about-us"}>About Us</Link>
                         </div>
                         <div className={styles["navbar-link"]}>
                             <Link href={"/"}>FAQ</Link>
