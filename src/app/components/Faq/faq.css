@@ -15,7 +15,7 @@
     cursor: pointer;
 }
 .faq-question {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -25,7 +25,10 @@
     padding: 10px;
     border-radius: 5px;
     margin-top: 5px;
+    margin-left: 20px;
     font-weight: 300;
+    color: #9C9E9F;
+;
 }
 .faq-opener-closer{
     background: linear-gradient(to right, #8200BA, #FD9E17);
@@ -33,6 +36,7 @@
     -webkit-text-fill-color: transparent;
     font-size: 20px;
     font-weight: bold;
+    margin-left: 10px;
 }
 .faq-opener-closer:hover{
     background: deepskyblue;
@@ -42,4 +46,5 @@
 .gradient-line{
     width: 1075px;
     border-image: linear-gradient(to right, #8200BA, #FD9E17) 2;
+    margin-top: 10px;
 }

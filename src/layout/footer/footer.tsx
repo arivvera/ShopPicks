@@ -3,6 +3,7 @@ import '../../app/globals.css';
 import './footer.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookF, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
     return (
@@ -18,11 +19,16 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="footer-group-blocks">
                     <div className="footer-group-item">
-                        <p>Home</p>
+                        <Link href={"/"}>
+                            <p>Home</p>
+                        </Link>
+
                         <p>Our products</p>
                         <p>Courses</p>
                         <p>About Us</p>
+                        <Link href={"/faq"}>
                         <p>FAQ</p>
+                        </Link>
                     </div>
                     <div className="footer-group-item">
                         <p>Contact us</p>
