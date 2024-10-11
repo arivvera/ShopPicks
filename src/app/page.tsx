@@ -1,7 +1,5 @@
 import {ProductsCarousel} from "@/app/components/ProductsCaroussel/ProductsCarousel";
 import OpinionBox from "@/app/components/OpinionBox/OpinionBox";
-
-import styles from "./page.module.css";
 import Header from "@/layout/home/header/header";
 import Factors from "@/layout/home/factor/factor";
 import Courses from "@/layout/home/courses/courses";
@@ -9,6 +7,7 @@ import Pricing from "@/layout/home/pricing/pricing";
 import MailList from "@/layout/home/mail-list/mail-list";
 import Products from "@/layout/home/products/products";
 import BackgroundStars from "@/layout/home/background-stars/background-stars";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
@@ -18,10 +17,10 @@ export default function Home() {
         <Header />
         <Factors />
         <Products />
+        <ProductsCarousel />
         <Courses />
         <Pricing />
         <MailList />
-        <ProductsCarousel />
         <OpinionBox />
       </div>
     </div>

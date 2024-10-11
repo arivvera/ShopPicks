@@ -16,8 +16,9 @@ const OpinionBoxInfo: React.FC<OpinionProps> = ({ name, date, review, url}) => {
                         <div className="avatar-container-inner">
                             <Image
                                 src={`/sample/Users/img/${url}`}
-                                height={50}
                                 width={53}
+                                height={50}
+                                layout={"responsive"}
                                 alt={"User picture"}
                                 className={"opinion-boxes-picture"}
                             />
