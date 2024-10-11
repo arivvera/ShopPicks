@@ -12,7 +12,6 @@
 
 .questions{
     color: #FFFFFF;
-
     border-radius: 18px;
     padding: 5%;
 
@@ -26,9 +25,13 @@
 }
 .questions-section{
     font-family: inherit;
+    width: 1075px;
 }
 .questions-section li {
     list-style: none;
+}
+.faq-section{
+
 }
 
 
@@ -44,4 +47,47 @@ h1.title-gradient{
     background: linear-gradient(to right, #8200BA, #FD9E17);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.nav-bar-section {
+    width: 858px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.navbar-faq-link {
+    text-align: center;
+    width: 200px;
+    height: 52px;
+    border: transparent;
+    border-radius: 108px;
+    background: #040913;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-faq-link:hover {
+    cursor: pointer;
+}
+.faq-link-wrapper {
+    width: 206px;
+    height: 58px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-link-wrapper:hover,
+.faq-link-wrapper:active{
+    border-radius: 108px;
+    padding: 2px;
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+    background: linear-gradient(to right, #830DBA, #FD9E17);
 }
