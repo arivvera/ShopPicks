@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";    
+import { Poppins } from "next/font/google";
 import { Roboto } from "next/font/google";
 import { Inter } from "next/font/google";
 
@@ -8,6 +8,7 @@ export const poppins = Poppins({
     display: "swap",
     style: ["normal"],
     variable: "--font-poppins",
+    adjustFontFallback: false
 });
 
 export const roboto = Roboto({
@@ -16,6 +17,7 @@ export const roboto = Roboto({
     display: "swap",
     style: ["normal"],
     variable: "--font-roboto",
+    adjustFontFallback: false
 });
 
 export const inter = Inter({
@@ -24,4 +26,5 @@ export const inter = Inter({
     display: "swap",
     style: ["normal"],
     variable: "--font-inter",
+    adjustFontFallback: false
 });

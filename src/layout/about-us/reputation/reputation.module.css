@@ -42,7 +42,7 @@
     height: 148px;
     padding: 41px 25px 41px 45px;
     border-radius: 18px;
-    background-color: var(--universal-gray);
+    background-color: var(--color-global-gray);
 }
 
 .reputation-card-title {

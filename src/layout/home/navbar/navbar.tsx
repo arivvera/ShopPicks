@@ -1,42 +1,34 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./navbar.module.css";
 import shoppingCartIcon from "@/app/assets/images/shopping-cart-icon.svg";
 import wishListIcon from "@/app/assets/images/wishlist-icon.svg";
+import { usePathname } from "next/navigation";
+import NavbarLink from "../navbar-link/navbar-link";
 
 export default function Navbar () {
+    const pathname = usePathname();
+
     return (
         <div className={styles["navbar-container"]}>
             <nav className={`${styles.navbar} frame-container`}>
                 {/* Primary section of the navigation bar containing the logo, links, and buttons. */}
                 <div className={styles["navbar-a"]}>
                     <div className={styles["navbar-logo"]}>
-                        <Link href={"/"}>Lgo here</Link>
+                        <Link href={"/"}> Lgo here </Link>
                     </div>
                     <div className={styles["navbar-links"]}>
-                        <div className={`${styles["navbar-link"]} ${styles["navbar-link-home"]}`}>
-                            <Link href={"/"}>Home</Link>
-                        </div>
-                        <div className={styles["navbar-link"]}>
-                            <Link href={"/"}>Our Products</Link>    
-                        </div>
-                        <div className={styles["navbar-link"]}>
-                            <Link href={"/"}>Courses</Link>
-                        </div>
-                        <div className={styles["navbar-link"]}>
-                            <Link href={"/about-us"}>About Us</Link>
-                        </div>
-                        <div className={styles["navbar-link"]}>
-                            <Link href={"/"}>FAQ</Link>
-                        </div>
-                        <div className={styles["navbar-link"]}>
-                            <Link href={"/"}>Contact us</Link>
-                        </div>
-                        <div className={styles["navbar-link"]}>
-                            <Link href={"/"}>Log in</Link>
-                        </div>
-                        <div className={`${styles["navbar-link"]} ${styles["navbar-link-sign-up"]}`}>
-                            <Link href={"/"}>Sign up</Link>
+                        <NavbarLink href="/">Home</NavbarLink>
+                        <NavbarLink href="/our-products">Our products</NavbarLink>
+                        <NavbarLink href="/courses">Courses</NavbarLink>
+                        <NavbarLink href="/about">About Us</NavbarLink>
+                        <NavbarLink href="/faq">FAQ</NavbarLink>
+                        <NavbarLink href="/contact-us">Contact us</NavbarLink>
+                        <NavbarLink href="/log-in">Log in</NavbarLink>
+                        <div className={`${styles["navbar-link-sign-up"]}`}>
+                            <Link href={"/sign-up"}>Sign up</Link>
                         </div>
                     </div>
                 </div>

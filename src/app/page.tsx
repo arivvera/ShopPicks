@@ -15,10 +15,10 @@ export default function Home() {
         <Header />
         <Factors />
         <Products />
+        <ProductsCarousel />
         <Courses />
         <Pricing />
         <MailList />
-        <ProductsCarousel />
         <OpinionBox />
       </div>
     </div>
