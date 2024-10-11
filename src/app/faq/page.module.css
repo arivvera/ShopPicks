@@ -33,6 +33,9 @@
 .faq-section{
 
 }
+.navbar-faq-link:active{
+
+}
 
 
 .list-answer-pair{
@@ -84,8 +87,14 @@ h1.title-gradient{
     align-items: center;
 }
 
-.faq-link-wrapper:hover,
-.faq-link-wrapper:active{
+.faq-link-wrapper:hover{
+    border-radius: 108px;
+    padding: 2px;
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+    background: linear-gradient(to right, #830DBA, #FD9E17);
+}
+
+.active {
     border-radius: 108px;
     padding: 2px;
     border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
