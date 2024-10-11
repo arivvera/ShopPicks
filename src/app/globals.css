@@ -1,7 +1,9 @@
 :root {
   --background: #040913;
-  --universal-gray: #1F2123;
-  --universal-pink: #9A299A;
+  --color-global-gray: #1F2123;
+  --color-global-pink: #9A299A;
+  --color-navbar-active-element: #9A299A40;
+  --color-navbar-hover-element: #9a299a19;
 }
 
 html,
@@ -41,21 +43,21 @@ img {
   display: block;
 }
 
-.gradient-text-header {
+.gradient-text-1 {
   background: linear-gradient(90.91deg, #820DBA 7.86%, #FD9E17 88.66%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.gradient-text-courses {
+.gradient-text-2 {
   background: linear-gradient(90.56deg, #9A299A 7.75%, #F19026 88.91%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.gradient-text-pricing {
+.gradient-text-3 {
   background: linear-gradient(90.56deg, #9A299A 7.75%, #FD9E17 88.91%);
   background-clip: text;
   -webkit-background-clip: text;

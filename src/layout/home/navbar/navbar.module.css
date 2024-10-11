@@ -10,7 +10,7 @@
 .navbar-a,
 .shopping-cart-button,
 .wishlist-button {
-    background-color: var(--universal-gray);
+    background-color: var(--color-global-gray);
 }
 
 .navbar-container {
@@ -37,7 +37,7 @@
 
 .navbar-links {
     align-items: center;
-    gap: 32px;
+    gap: 24px;
 }
 
 .navbar-link,
@@ -46,15 +46,6 @@
     font-weight: 300;
     line-height: 24px;
     color: #9C9E9F;
-}
-
-.navbar-link-home a {
-    background-color: rgba(154, 41, 154, 0.25);
-    padding: 14px 20px 14px 22px;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 108px;
 }
 
 .navbar-link-sign-up a {
@@ -87,7 +78,7 @@
     position: absolute;
     width: 18.57px;
     height: 18.79px;
-    background-color: var(--universal-pink);
+    background-color: var(--color-global-pink);
     border-radius: 50%;
     left: 69.29%;
     right: 19.74%;

@@ -6,9 +6,6 @@ import { poppins, roboto, inter } from "@/common/utils/fonts";
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-//import localFont from "next/dist/compiled/@next/font/dist/local";
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
