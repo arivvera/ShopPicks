@@ -17,6 +17,7 @@ export default function Courses() {
                         <p>
                             Explore the Latest in Futuristic Tech Discover our range of advanced gadgets and accessories, designed to bring the future into your hands today. Shop now and elevate your lifestyle. 
                         </p>
+                        <br/>
                         <p>
                             We are dedicated to pushing the boundaries of technology and design. Our mission is to provide you with the most innovative and stylish futuristic products available.
                         </p>
