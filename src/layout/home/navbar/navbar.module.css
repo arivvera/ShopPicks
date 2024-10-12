@@ -18,9 +18,11 @@
 }
 
 .navbar {
+    width: 1320px;
+    height: 90px;
     justify-content: center;
     align-items: center;
-    gap: 19px;
+    gap: 6px;
     margin-top: 71px;
 }
 

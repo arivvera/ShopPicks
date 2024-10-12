@@ -1,6 +1,7 @@
 .courses,
 .courses-content {
     display: flex;
+    margin-left: 20px;
 }
 
 .courses {
@@ -22,10 +23,10 @@
 }
 
 .courses-text {
-    font-size: 32px;
+    font-size: 23px;
     font-weight: 300;
-    line-height: 41px;
-    min-width: 1120px;
+    line-height: 27px;
+    max-width: 847px;
     margin-top: 35px;
 }
 
@@ -44,7 +45,7 @@
 
 .poster {
     position: absolute;
-    left: 805px;
+    left: 655px;
     bottom: 0;
     z-index: -1;
 }
