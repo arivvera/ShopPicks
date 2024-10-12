@@ -1,6 +1,7 @@
 .courses,
 .courses-content {
     display: flex;
+    margin-left: 20px;
 }
 
 .courses {

@@ -32,7 +32,7 @@ export const ProductsCarousel: React.FC = () => {
     return (
         <Carousel
             showThumbs={false}
-            autoPlay={true}
+            autoPlay={false}
             emulateTouch={true}
             stopOnHover={true}
             infiniteLoop={true}
@@ -46,8 +46,8 @@ export const ProductsCarousel: React.FC = () => {
                                     <div className={"products-carousel-img"}>
                                         <Image
                                             src={`/sample/Products/sample-data/${product.img}`}
-                                            height={421}
-                                            width={376}
+                                            height={295}
+                                            width={302}
                                             alt={product.name}
                                         />
                                     </div>
