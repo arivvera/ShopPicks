@@ -64,6 +64,13 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+.gradient-text-4 {
+  background: linear-gradient(91deg, #820DBA 7.86%, #FD9E17 88.66%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .frame-container {
   max-width: 1320px;
   margin-right: auto;
