@@ -26,7 +26,7 @@ export default function Navbar () {
                         <NavbarLink href="/about-us">About Us</NavbarLink>
                         <NavbarLink href="/faq">FAQ</NavbarLink>
                         <NavbarLink href="/contact-us">Contact us</NavbarLink>
-                        <NavbarLink href="/log-in">Log in</NavbarLink>
+                        <NavbarLink href="/login">Log in</NavbarLink>
                         <div className={`${styles["navbar-link-sign-up"]}`}>
                             <Link href={"/sign-up"}>Sign up</Link>
                         </div>
