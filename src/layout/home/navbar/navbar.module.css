@@ -13,16 +13,12 @@
     background-color: var(--color-global-gray);
 }
 
-.navbar-container {
-    /*padding-top: 71px;*/
-}
-
 .navbar {
     width: 1320px;
     height: 90px;
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 19px;
     margin-top: 71px;
 }
 

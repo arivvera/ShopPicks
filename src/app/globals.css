@@ -1,3 +1,5 @@
+/* @import url("./normalize.css"); */
+
 :root {
   --background: #040913;
   --color-global-gray: #1F2123;
@@ -59,6 +61,13 @@ img {
 
 .gradient-text-3 {
   background: linear-gradient(90.56deg, #9A299A 7.75%, #FD9E17 88.91%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-4 {
+  background: linear-gradient(91deg, #820DBA 7.86%, #FD9E17 88.66%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
