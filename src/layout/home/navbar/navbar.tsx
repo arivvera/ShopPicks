@@ -3,8 +3,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./navbar.module.css";
-import shoppingCartIcon from "@/app/assets/images/shopping-cart-icon.svg";
-import wishListIcon from "@/app/assets/images/wishlist-icon.svg";
+import shoppingCartIcon from "@/app/assets/images/home/shopping-cart-icon.svg";
+import wishListIcon from "@/app/assets/images/home/wishlist-icon.svg";
 import { usePathname } from "next/navigation";
 import NavbarLink from "../navbar-link/navbar-link";
 

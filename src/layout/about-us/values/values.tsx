@@ -2,11 +2,11 @@ import styles from "./values.module.css"
 import BorderWrapper from "@/components/border-wrapper/border-wrapper";
 import React from "react";
 import Image from "next/image";
-import coreValueTechnologyIcon from "@/app/assets/images/core-value-technology-icon.svg";
-import coreValueCustomizationIcon from "@/app/assets/images/core-value-customization-icon.svg";
-import coreValueInnovationIcon from "@/app/assets/images/core-value-innovation-icon.svg";
-import coreValueQualityIcon from "@/app/assets/images/core-value-quality-icon.svg";
-import coreValueSustainabilityIcon from "@/app/assets/images/core-value-sustainability-icon.svg";
+import coreValueTechnologyIcon from "@/app/assets/images/about-us/core-value-technology-icon.svg";
+import coreValueCustomizationIcon from "@/app/assets/images/about-us/core-value-customization-icon.svg";
+import coreValueInnovationIcon from "@/app/assets/images/about-us/core-value-innovation-icon.svg";
+import coreValueQualityIcon from "@/app/assets/images/about-us/core-value-quality-icon.svg";
+import coreValueSustainabilityIcon from "@/app/assets/images/about-us/core-value-sustainability-icon.svg";
 
 const CoreValuesItem = ({
     imageSrc, 

@@ -1,6 +1,6 @@
 import styles from "./story.module.css";
 import Image from "next/image";
-import astronaut from "@/app/assets/images/astronaut.png"
+import astronaut from "@/app/assets/images/about-us/astronaut.png"
 
 export default function Story() {
     return (

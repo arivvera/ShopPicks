@@ -27,7 +27,7 @@
     max-width: 613.44px;
     min-height: 320.52px;
     padding: 48.8px 30px;
-    background-color: var(--background);
+    background-color: var(--color-background);
 }
 
 .values-card-head {

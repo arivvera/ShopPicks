@@ -1,7 +1,7 @@
-/* @import url("./normalize.css"); */
+@import url("./normalize.css");
 
 :root {
-  --background: #040913;
+  --color-background: #040913;
   --color-global-gray: #1F2123;
   --color-global-pink: #9A299A;
   --color-navbar-active-element: #9A299A40;
@@ -15,17 +15,11 @@ body {
 }
 
 body {
-  background: var(--background);
+  background: var(--color-background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-}
-
-body,
-input,
-button {
-  font-family: var(--font-poppins), Helvetica, sans-serif;
   color: #FFFFFF;
 }
 
@@ -43,6 +37,20 @@ a {
 
 img {
   display: block;
+}
+
+input {
+  border: none;
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 .gradient-text-1 {
