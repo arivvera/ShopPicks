@@ -1,7 +1,7 @@
 import styles from "./courses.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import smilingGirl from "@/app/assets/images/smiling-girl.png";
+import smilingGirl from "@/app/assets/images/home/smiling-girl.png";
 
 export default function Courses() {
     return (

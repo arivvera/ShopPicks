@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./factor.module.css";
-import footNoteIcon from "@/app/assets/images/foot-note-icon.svg";
+import footNoteIcon from "@/app/assets/images/home/foot-note-icon.svg";
 import BorderWrapper from "@/components/border-wrapper/border-wrapper";
 import React from "react";
 

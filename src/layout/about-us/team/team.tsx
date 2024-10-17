@@ -1,13 +1,13 @@
 import styles from "./team.module.css";
 import Image, { StaticImageData } from "next/image";
-import teamMember1 from "@/app/assets/images/team-member-1.png";
-import teamMember2 from "@/app/assets/images/team-member-2.png";
-import teamMember3 from "@/app/assets/images/team-member-3.png";
-import teamMember4 from "@/app/assets/images/team-member-4.png";
-import teamMember5 from "@/app/assets/images/team-member-5.png";
-import teamMember6 from "@/app/assets/images/team-member-6.png";
-import teamMember7 from "@/app/assets/images/team-member-7.png";
-import teamMember8 from "@/app/assets/images/team-member-8.png";
+import teamMember1 from "@/app/assets/images/about-us/team-member-1.png";
+import teamMember2 from "@/app/assets/images/about-us/team-member-2.png";
+import teamMember3 from "@/app/assets/images/about-us/team-member-3.png";
+import teamMember4 from "@/app/assets/images/about-us/team-member-4.png";
+import teamMember5 from "@/app/assets/images/about-us/team-member-5.png";
+import teamMember6 from "@/app/assets/images/about-us/team-member-6.png";
+import teamMember7 from "@/app/assets/images/about-us/team-member-7.png";
+import teamMember8 from "@/app/assets/images/about-us/team-member-8.png";
 
 const TeamMemberCard = ({
     imageSrc,

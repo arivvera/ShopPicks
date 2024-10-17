@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./pricing.module.css";
-import checkIcon from "@/app/assets/images/check.svg";
+import checkIcon from "@/app/assets/images/home/check.svg";
 import Image from "next/image";
 import BorderWrapper from "@/components/border-wrapper/border-wrapper";
 

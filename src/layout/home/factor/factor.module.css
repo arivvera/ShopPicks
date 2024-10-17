@@ -34,7 +34,7 @@
     max-width: 341px;
     min-height: 207px;
     padding: 38px 27px;
-    background-color: var(--background);
+    background-color: var(--color-background);
 }
 
 .factor-card-head {

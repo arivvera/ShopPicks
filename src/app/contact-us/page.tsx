@@ -1,12 +1,33 @@
 import styles from "./page.module.css"
 import Image from "next/image";
-import contactInfoEmailIcon from "@/app/assets/images/contact-info-email-icon.svg";
-import contactInfoPhone from "@/app/assets/images/contact-info-phone-icon.svg";
-import contactInfoLocation from "@/app/assets/images/contact-info-location-icon.svg";
+import contactInfoEmailIcon from "@/app/assets/images/contact-us/contact-info-email-icon.svg";
+import contactInfoPhone from "@/app/assets/images/contact-us/contact-info-phone-icon.svg";
+import contactInfoLocation from "@/app/assets/images/contact-us/contact-info-location-icon.svg";
+
+const ContactInfoItem = ({
+    image,
+    description,
+} : {
+    image: string,
+    description: string,
+}) => {
+    return (
+        <div className={styles["contact-info-item"]}>
+            <div className={styles["contact-info-item-icon"]}>
+                <Image src={image} alt=""/>
+            </div>
+            <div className={styles["contact-info-item-text"]}>
+                <p>
+                    {description}
+                </p>
+            </div>
+        </div>
+    );
+}
 
 export default function ContactUs() {
     return (
-        <div className={styles["contact-us-container"]}>
+        <div className={styles.container}>
             <div className={`${styles["contact-us"]} frame-container`}>   
                 <div className={styles["contact-us-content"]}>
                     <div className={`${styles["contact-us-title"]} gradient-text-4`}>
@@ -19,36 +40,9 @@ export default function ContactUs() {
                         </p>
                     </div>
                     <div className={styles["contact-info"]}>
-                        <div className={styles["contact-info-item"]}>
-                            <div className={styles["contact-info-item-icon"]}>
-                                <Image src={contactInfoPhone} alt="contact info phone icon"/>
-                            </div>
-                            <div className={styles["contact-info-item-text"]}>
-                                <p>
-                                    (775) 747-7258  
-                                </p>
-                            </div>
-                        </div>
-                        <div className={styles["contact-info-item"]}>
-                            <div className={styles["contact-info-item-icon"]}>
-                                <Image src={contactInfoEmailIcon} alt="contact info email icon"/>
-                            </div>
-                            <div className={styles["contact-info-item-text"]}>
-                                <p>
-                                    info@futurespace.com
-                                </p>
-                            </div>
-                        </div>
-                        <div className={styles["contact-info-item"]}>
-                            <div className={styles["contact-info-item-icon"]}>
-                                <Image src={contactInfoLocation} alt="contact info location icon"/>
-                            </div>
-                            <div className={styles["contact-info-item-text"]}>
-                                <p>
-                                    919 S. Main Street Snowflake, AZ 85937
-                                </p>
-                            </div>
-                        </div>
+                        <ContactInfoItem image={contactInfoPhone} description="(775) 747-7258"/>
+                        <ContactInfoItem image={contactInfoEmailIcon} description="info@futurespace.com"/>
+                        <ContactInfoItem image={contactInfoLocation} description="919 S. Main Street Snowflake, AZ 85937"/>
                     </div>
                 </div>
                 <form className={styles["contact-form"]}>
