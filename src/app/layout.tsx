@@ -9,10 +9,10 @@ import { Poppins } from "next/font/google";
 import { Roboto } from "next/font/google";
 import { Inter } from "next/font/google";
 
-// export const metadata: Metadata = {
-//   title: "ShopPicks",
-//   description: "ShopPicks by NTSprint",
-// };
+export const metadata: Metadata = {
+  title: "ShopPicks",
+  description: "ShopPicks by NTSprint",
+};
 
 const poppins = Poppins({
     display: 'swap',
