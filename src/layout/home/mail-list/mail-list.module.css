@@ -43,7 +43,7 @@
     height: 52px;
     border-radius: 39px;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #FFF;
  }
 
 .mail-list-form input::placeholder {
@@ -51,7 +51,7 @@
     font-weight: 500;
     line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .mail-list-form button {
@@ -62,7 +62,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    text-align: center;
     border: none;
     cursor: pointer;
+    color: #FFF;
 }

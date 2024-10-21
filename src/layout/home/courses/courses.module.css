@@ -1,7 +1,7 @@
 .courses,
-.courses-content {
+.courses-content,
+.courses-cta a {
     display: flex;
-    margin-left: 20px;
 }
 
 .courses {
@@ -12,8 +12,6 @@
 
 .courses-content {
     flex-direction: column;
-    align-items: flex-start;
-    max-width: 1120px;
 }
 
 .courses-title {
@@ -26,7 +24,7 @@
     font-size: 23px;
     font-weight: 300;
     line-height: 27px;
-    max-width: 847px;
+    width: 847px;
     margin-top: 35px;
 }
 
@@ -35,8 +33,11 @@
 }
 
 .courses-cta a {
-    padding: 14px 24px;
-    border: 1px solid #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 52px;
+    border: 1px solid #FFF;
     border-radius: 39px;
     font-size: 16px;
     font-weight: 500;

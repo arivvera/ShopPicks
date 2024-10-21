@@ -1,5 +1,6 @@
 .header,
-.header-ctas {
+.ctas,
+.cta a {
     display: flex;
 }
 
@@ -8,7 +9,7 @@
     align-items: center;
 }
 
-.header-title {
+.title {
     font-size: 85px;
     font-weight: 700;
     line-height: 104.5px;
@@ -16,7 +17,7 @@
     text-align: center;
 }
 
-.header-text {
+.description {
     font-size: 32px;
     font-weight: 300;
     line-height: 41px;
@@ -25,25 +26,25 @@
     margin-top: 26px;
 }
 
-.header-ctas {
+.ctas {
     justify-content: center;
-    align-items: center;
     gap: 27px;
     margin-top: 40px;
 }
 
-.header-cta a { 
-    padding: 14px 24px;
-    border-radius: 39px;
-    text-align: center;
+.cta a { 
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    border-radius: 39px;    
 }
 
-.header-cta-products a {
+.cta-products a {
+    width: 208px;
     background: var(--color-global-pink);
-    min-width: 208px;
 }
 
-.header-cta-courses a {
-    border: 1px solid #FFFFFF;
-    min-width: 200px;
+.cta-courses a {
+    width: 200px;
+    border: 1px solid #FFF;
 }

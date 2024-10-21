@@ -1,6 +1,6 @@
 import "./globals.css";
 import Footer from "@/layout/footer/footer";
-import Navbar from "@/layout/home/navbar/navbar";
+import Navbar from "@/layout/navbar/navbar";
 import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
 import '@fortawesome/fontawesome-svg-core/styles.css'

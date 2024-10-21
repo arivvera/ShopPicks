@@ -10,17 +10,15 @@ import Products from "@/layout/home/products/products";
 
 export default function Home() {
   return (
-    <div className={styles["home-container"]}>
-      <div className={styles.home}>
-        <Header />
-        <Factors />
-        <Products />
-        <ProductsCarousel />
-        <Courses />
-        <Pricing />
-        <MailList />
-        <OpinionBox />
-      </div>
+    <div className={styles.home}>
+      <Header />
+      <Factors />
+      <Products />
+      <ProductsCarousel />
+      <Courses />
+      <Pricing />
+      <MailList />
+      <OpinionBox />
     </div>
   );
 }

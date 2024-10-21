@@ -30,10 +30,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 11px;
+    width: 341px;
+    height: 207px;
+    padding: 38px 17px 39px 27px;
     border-radius: 18px;
-    max-width: 341px;
-    min-height: 207px;
-    padding: 38px 27px;
     background-color: var(--color-background);
 }
 
@@ -47,25 +47,26 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 26px;
+    width: 297px;
 }
 
 .foot-note {
     justify-content: flex-start;
     align-items: center;
     gap: 57px;
-    margin-top: 48px;
     width: 1148px;
-    min-height: 224px;
+    height: 224px;
+    margin-top: 48px;
     background-color: var(--color-global-gray);
     border-radius: 18px;
     padding-left: 54px;
-
+    padding-right: 54px;
 }
 
 .foot-note-icon {
     justify-content: center;
     align-items: center;
-    min-width: 116px;
+    width: 116px;
     height: 112px;
     border-radius: 16px;
     box-shadow: 0px 6px 40.7px 0px #00000091;
@@ -76,5 +77,4 @@
     font-size: 36px;
     font-weight: 300;
     line-height: 45px;
-    text-align: left;
 }
