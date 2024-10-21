@@ -3,6 +3,7 @@ import Image from "next/image";
 import contactInfoEmailIcon from "@/app/assets/images/contact-us/contact-info-email-icon.svg";
 import contactInfoPhone from "@/app/assets/images/contact-us/contact-info-phone-icon.svg";
 import contactInfoLocation from "@/app/assets/images/contact-us/contact-info-location-icon.svg";
+import phonePrefixArrowIcon from "@/app/assets/images/contact-us/phone-prefix-arrow-icon.svg";
 
 const ContactInfoItem = ({
     image,
@@ -61,6 +62,7 @@ export default function ContactUs() {
                         <div className={`${styles["contact-form-field"]} ${styles["contact-form-phone"]}`}>
                             <div className={styles["country-prefix"]}>
                                 <p>1+</p>
+                                <Image src={phonePrefixArrowIcon} alt="" width={11}></Image>
                             </div>
                             <input type="text" name="phone" placeholder="Phone Number"/>
                         </div>

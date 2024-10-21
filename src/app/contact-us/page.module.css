@@ -5,7 +5,8 @@
 .contact-form,
 .contact-form-name,
 .contact-form-phone-state,
-.contact-form-phone {
+.contact-form-phone,
+.contact-form-phone .country-prefix {
     display: flex;
 }
 
@@ -36,31 +37,33 @@
     font-weight: 300;
     line-height: 150%; 
     margin-top: 15px;
-    max-width: 533px;
+    width: 533px;
 }
 
 .contact-info {
     flex-direction: column;
     gap: 30px;
     margin-top: 85px;
-    text-decoration-line: underline;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; 
 }
 
 .contact-info-item {
     justify-content: flex-start;
     align-items: center;
     gap: 14px;
-}
-
-.contact-info-item-icon {
+  }
+  
+  .contact-info-item-icon {
     width: 40px;
-}
+  }
+  
+  .contact-info-item-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
+  }
 
-.contact-form {
+  .contact-form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -69,100 +72,98 @@
     height: 667px;
     border-radius: 18px;
     background: var(--color-global-gray);
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.contact-form input,
-.contact-form textarea {
+  }
+  
+  .contact-form input,
+  .contact-form-phone,
+  .contact-form button {
+    height: 52px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border-radius: 39px;
+    border: 2px solid #FFF;
+    background-color: transparent;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
+    padding-left: 36px;
+    padding-right: 36px;
+    color: #FFF;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
     color: #9C9E9F;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-}
-
-.contact-form-name,
-.contact-form-phone-state {
+  }
+  
+  .contact-form-name,
+  .contact-form-phone-state {
     justify-content: center;
     gap: 17px;
-}
-
-.contact-form-field input,
-.contact-form-field textarea {
-    border-radius: 39px;
-    border: 2px solid #FFF;
-    background-color: var(--color-global-gray);
-}
-
-.contact-form-name input {
-    padding: 14px 154px 14px 28px;
+  }
+  
+  .contact-form-name input,
+  .contact-form-state input {
     width: 267px;
-}
-
-.contact-form-email input {
-    padding: 14px 429px 14px 36px;
+  }
+  
+  .contact-form-email input {
     width: 552px;
-}
-
-.contact-form-phone {
-    width: 267px;
-}
-
-.contact-form-phone input,
-.contact-form-phone .country-prefix {
-    padding: 14px 12px 14px 17px;
-}
-
-.contact-form-phone .country-prefix {
+  }
+  
+  .contact-form-phone .country-prefix {
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
     border-radius: 39px 0 0 39px;
-    border: 2px solid #FFFFFF;
-    border-right: 1px solid #FFFFFF;
-}
-
-.contact-form-phone input {
+    border: 2px solid #FFF;
+    border-right: 1px solid #FFF;
+    width: 65px;
+  }
+  
+  .contact-form-phone input {
+    padding-left: 17px;
+    padding-right: 17px;
     border-radius: 0px 39px 39px 0;
-    border: 2px solid #FFFFFF;
-    border-left: 1px solid #FFFFFF;
-    flex: 1;
+    border: 2px solid #FFF;
+    border-left: 1px solid #FFF;
     width: 202px;
-}
-
-.contact-form-state input {
-    padding: 14px 197px 14px 28px;
+  }
+  
+  .contact-form-state input {
     width: 268px;
-}
-
-.contact-form-message textarea {
+  }
+  
+  .contact-form textarea {
     padding: 14px 36px;
     width: 552px;
     height: 250px;
     resize: none;
-}
-
-.contact-form button {
+  }
+  
+  .contact-form button {
     margin-top: 19px;
     background-color: var(--color-global-pink);
     width: 556px;
-    padding: 14px 24px;
-    text-align: center;
     border-radius: 39px;
-    color: #FFFFFF;
+    color: #FFF;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
     border: none;
-}
+  }
+  

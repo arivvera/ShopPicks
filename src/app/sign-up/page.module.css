@@ -85,6 +85,10 @@
     line-height: 150%;
 }
 
+.form input:focus {
+    outline: none;
+}
+
 .form button {
     background: #9A299A;
     color: #FFFFFF;

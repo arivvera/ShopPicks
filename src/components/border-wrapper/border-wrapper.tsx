@@ -1,35 +1,34 @@
-"use client";
-import { useEffect, useRef, useState } from "react";
-import styles from "./border-wrapper.module.css";
+"use client"
 import React from "react";
+import { useEffect, useRef } from "react";
 
-export default function BorderWrapper({ 
-  children, borderSize, borderColor
-} : { 
-  children: React.ReactNode, borderSize: number, borderColor?: string
+export default function BorderWrapper({
+  children, 
+  borderSize,
+} : {
+  children: React.ReactElement,
+  borderSize: number
 }) {
+  const childRef = useRef(null); 
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const defaultBackgroundColor = "linear-gradient(112.12deg, #830DBA 6.85%, #FD9E17 94.58%)";
-  const childRef = useRef<HTMLDivElement>(null);
-  const [borderProperties, setBorderProperties] = useState({
-    padding: `${borderSize}px`,
-    background: borderColor || defaultBackgroundColor,
-    borderRadius: "0px",
-  });
 
   useEffect(() => {
-    if (childRef.current) {
-      const childBorderRadius = window.getComputedStyle(childRef.current).borderRadius;
-      const newBorderRadius = parseInt(childBorderRadius) + 4;
-      setBorderProperties(prev => ({
-        ...prev,
-        borderRadius: `${newBorderRadius}px`,
-      }));
+    if (childRef.current && wrapperRef.current) {
+      const childStyles = globalThis.getComputedStyle(childRef.current);
+      const childBorderRadius = childStyles.borderRadius;
+      const wrapperStyles = wrapperRef.current.style;
+      wrapperStyles.borderRadius = `${parseInt(childBorderRadius, 10) + 4}px`;
+      wrapperStyles.padding = `${borderSize}px`;
+      wrapperStyles.background = defaultBackgroundColor;
     }
-  }, []);;
+  }, [])
 
   return (
-    <div className={styles["border-wrapper"]} style={{...borderProperties}}>
-      {React.cloneElement(children as React.ReactElement, { ref: childRef })}
+    <div ref={wrapperRef}>
+      {
+        React.cloneElement(children, {ref: childRef})
+      }
     </div>
   );
 }

@@ -81,6 +81,10 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
+.page {
+  width: 100%;
+}
+
 .frame-container {
   max-width: 1320px;
   margin-right: auto;
