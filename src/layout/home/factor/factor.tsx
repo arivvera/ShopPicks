@@ -10,7 +10,7 @@ const FactorCard = React.forwardRef(({
     chartHead: string; chartBody: string 
 }, ref: React.Ref<HTMLDivElement>) => {
     return (
-        <BorderWrapper borderSize={3} borderColor={"linear-gradient(112.12deg, #830DBA 6.85%, #FD9E17 94.58%)"}>
+        <BorderWrapper borderSize={3}>
             <div ref={ref} className={styles["factor-card"]}>
                 <div className={styles["factor-card-head"]}>
                     <p>{chartHead}</p>
@@ -50,7 +50,7 @@ export default function Factor() {
             </div>
 
             <div className={styles["foot-note"]}>
-                <BorderWrapper borderSize={3} borderColor="linear-gradient(133.25deg, #9A299A 5.66%, #FD9E17 94.32%)">
+                <BorderWrapper borderSize={3} >
                     <div className={styles["foot-note-icon"]}>
                         <Image src={footNoteIcon} alt="foot note icon" width={40} height={41}/>
                     </div>
