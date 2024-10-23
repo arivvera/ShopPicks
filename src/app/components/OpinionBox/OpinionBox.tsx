@@ -33,7 +33,7 @@ const OpinionBox: React.FC = () => {
             <div className="opinion-boxes">
                 <Carousel
                     showThumbs={false}
-                    autoPlay={false}
+                    autoPlay={true}
                     emulateTouch={true}
                     stopOnHover={true}
                     infiniteLoop={true}

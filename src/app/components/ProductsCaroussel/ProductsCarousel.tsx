@@ -1,5 +1,5 @@
 'use client';
-import React from "react";
+import React, {MouseEventHandler} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './ProductsCarousel.css';
 import '../../globals.css';
@@ -28,19 +28,37 @@ export const ProductsCarousel: React.FC = () => {
     };
 
     const groupedProducts = groupItems(sampleProducts, 3);
+    const customIndicators = (clickHandler:MouseEventHandler<HTMLButtonElement>,
+                              isSelected:boolean, index:number, label:string)=>{
+        return  <button
+            type="button"
+            onClick={clickHandler}
+            aria-label={label}
+            style={{
+                backgroundColor: isSelected ? '#0DBA3E' : '#fff',
+                border: 'none',
+                borderRadius: '50%',
+                width: '12px',
+                height: '12px',
+                margin: '0 5px',
+                cursor: 'pointer',
+            }}
+        />
+    }
 
     return (
         <Carousel
             showThumbs={false}
-            autoPlay={false}
+            autoPlay={true}
             emulateTouch={true}
             stopOnHover={true}
             infiniteLoop={true}
+            renderIndicator={customIndicators}
         >
             {groupedProducts.map((group, index) => (
-                <div  className={"products-carousel-group"}  key={index}>
+                <div className={"products-carousel-group"} key={index}>
                     {group.map((product) => (
-                        <div className={"products-carousel"}  key={product.id}>
+                        <div className={"products-carousel"} key={product.id}>
                             <div className="carousel-box">
                                 <div className={"inner-box-block"}>
                                     <div className={"products-carousel-img"}>
@@ -76,4 +94,5 @@ export const ProductsCarousel: React.FC = () => {
             ))}
         </Carousel>
     );
+
 };
