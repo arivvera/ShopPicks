@@ -10,7 +10,7 @@ const PricingPlan = ({
     title: string, price: string, benefits: string[], cta: string
 }) => {
     return (
-        <BorderWrapper borderSize={4} borderColor="linear-gradient(180deg, #9A299A 0%, #FD9E17 100%)">
+        <BorderWrapper borderSize={4} >
             <div className={`${styles["pricing-plan"]}`}>
                 <div className={styles["pricing-plan-title"]}>
                     <p>
