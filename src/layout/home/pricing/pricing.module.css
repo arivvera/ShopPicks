@@ -63,6 +63,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 422px;
+    height: 417px;
     background: var(--color-global-gray);
     padding: 45.37px 24.02px 33.63px;
     border-radius: 18px;
@@ -99,7 +100,7 @@
   }
   
   .pricing-plan-cta {
-    margin-top: 56px;
+    margin-top: 16px;
     align-self: center;
   }
   

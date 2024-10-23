@@ -75,8 +75,7 @@ export default function Pricing() {
                             "Access to all courses",
                             "Unlimited course completion",
                             "Community support",
-                            "Certificate of completion",
-                            "Personalized learning path"
+                            "Access to exclusive content"
                         ]}
                         cta={"Join Now"}
                     />
@@ -88,7 +87,7 @@ export default function Pricing() {
                             "Advanced course creation tools",
                             "Premium course creation tools",
                             "Priority support",
-                            "Access to exclusive content"
+
                         ]}
                         cta={"Start Creating"}
                     />
