@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, {MouseEventHandler} from 'react';
 import '../../globals.css';
 import './OpinionBox.css';
 import OpinionBoxInfo from "@/app/components/OpinionBoxInfo/OpinionBoxInfo";
@@ -24,12 +24,30 @@ const OpinionBox: React.FC = () => {
         }
         return groups;
     };
+    //indicators of carousel modified to match design
+    const customIndicators = (clickHandler:MouseEventHandler<HTMLButtonElement>,
+                              isSelected:boolean, index:number, label:string)=>{
+        return  <button
+            type="button"
+            onClick={clickHandler}
+            aria-label={label}
+            style={{
+                backgroundColor: isSelected ? '#9A299A' : '#fff',
+                border: 'none',
+                borderRadius: '50%',
+                width: '12px',
+                height: '12px',
+                margin: '0 5px',
+                cursor: 'pointer',
+            }}
+        />
+    }
 
     const groupedReviews = groupItems(sampleReviews, 3);
 
     return (
         <div className="section-opinions">
-            <h1 className="section-opinions-title">Discover what people are saying about us</h1>
+            <h1 className="section-opinions-title">Discover what people are<p> saying about us:</p></h1>
             <div className="opinion-boxes">
                 <Carousel
                     showThumbs={false}
@@ -38,6 +56,8 @@ const OpinionBox: React.FC = () => {
                     stopOnHover={true}
                     infiniteLoop={true}
                     interval={3000}
+                    renderIndicator={customIndicators}
+
                 >
                     {groupedReviews.map((group, index) => (
                         <div key={index} className={"group-triple-reviews"}>
