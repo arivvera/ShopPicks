@@ -5,11 +5,10 @@ import Link from "next/link"
 import styles from "./navbar.module.css";
 import shoppingCartIcon from "@/app/assets/images/home/shopping-cart-icon.svg";
 import wishListIcon from "@/app/assets/images/home/wishlist-icon.svg";
-import { usePathname } from "next/navigation";
 import NavbarLink from "../navbar-link/navbar-link";
 
 export default function Navbar () {
-    const pathname = usePathname();
+    //const pathname = usePathname();
 
     return (
         <div className={styles["navbar-container"]}>
@@ -26,9 +25,9 @@ export default function Navbar () {
                         <NavbarLink href="/about-us">About Us</NavbarLink>
                         <NavbarLink href="/faq">FAQ</NavbarLink>
                         <NavbarLink href="/contact-us">Contact us</NavbarLink>
-                        <NavbarLink href="/login">Log in</NavbarLink>
+                        <NavbarLink href="/api/auth/login">Log in</NavbarLink>
                         <div className={`${styles["navbar-link-sign-up"]}`}>
-                            <Link href={"/sign-up"}>Sign up</Link>
+                            <Link href={"/api/auth/login"}>Sign up</Link>
                         </div>
                     </div>
                 </div>

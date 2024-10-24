@@ -6,8 +6,11 @@ config.autoAddCss = false
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { Roboto } from "next/font/google";
-import { Inter } from "next/font/google";
+//import { Roboto } from "next/font/google";
+//import { Inter } from "next/font/google";
+import { UserProvider } from '@auth0/nextjs-auth0/client';
+import Welcome from "@/layout/welcoming/welcome";
+
 
 export const metadata: Metadata = {
   title: "ShopPicks",
@@ -23,22 +26,22 @@ const poppins = Poppins({
     adjustFontFallback: false,
 });
 
-const roboto = Roboto({
+/*const roboto = Roboto({
     display: 'swap',
     weight: ["100", "300", "400", "500", "700", "900"],
     subsets: ["latin"],
     style: ["normal"],
     variable: "--font-roboto",
     adjustFontFallback: false
-});
+});*/
 
-const inter = Inter({
+/*const inter = Inter({
     display: 'swap',
     subsets: ["latin"],
     style: ["normal"],
     variable: "--font-inter",
     adjustFontFallback: false
-});
+});*/
 
 export default function RootLayout({
   children,
@@ -50,7 +53,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className}`}>
         <Navbar />
+
+        <UserProvider>
+            <Welcome />
         {children}
+        </UserProvider>
         <Footer />
       </body>
     </html>
