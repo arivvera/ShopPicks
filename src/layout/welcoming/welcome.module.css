@@ -1,0 +1,7 @@
+.right-locate{
+    display: flex;
+    width: 90%;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
