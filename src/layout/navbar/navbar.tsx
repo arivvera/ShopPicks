@@ -27,7 +27,7 @@ export default function Navbar () {
                         <NavbarLink href="/contact-us">Contact us</NavbarLink>
                         <NavbarLink href="/api/auth/login">Log in</NavbarLink>
                         <div className={`${styles["navbar-link-sign-up"]}`}>
-                            <Link href={"/api/auth/login"}>Sign up</Link>
+                            <Link href={"/api/auth/signup"}>Sign up</Link>
                         </div>
                     </div>
                 </div>
