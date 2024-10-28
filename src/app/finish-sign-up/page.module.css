@@ -131,3 +131,36 @@
     margin-top: 30px;
     margin-bottom: 151px;
 }
+
+.gender-select{
+    border: transparent 2px;
+    border-radius: 108px;
+    height: 52px;
+    width: 553px;
+    color: #FFFFFF;
+    background-color: #0D1018;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.gender-select-wrapper{
+    background: linear-gradient(112.12deg, #830DBA 6.85%, #FD9E17 94.58%);
+    border: transparent 4px;
+    border-radius: 108px;
+    height: 56px;
+    width: 558px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.dateInput {
+
+}
+
+.dateInput::-webkit-calendar-picker-indicator {
+    background: #040913;
+    border-radius: 50%;
+    background-image: url("../assets/images/sign-up/calendar.svg") ;
+}
