@@ -131,12 +131,11 @@ export default function SignUpAuth0() {
                     </div>
                     <div className={`${styles[""]} ${styles[""]}`}>
                         <BorderWrapper borderSize={2}>
-                            <input type="datetime-local" name="birthDate" onChange={handleChange} required />
+                            <input type="date" className={styles.dateInput} name="birthDate" onChange={handleChange} required />
                         </BorderWrapper>
                     </div>
-                    <div className={`${styles[""]} ${styles[""]}`}>
-                        <BorderWrapper borderSize={2}>
-                            <select name="gender" onChange={handleChange} required>
+                    <div className={`${styles["gender-select-wrapper"]} ${styles[""]}`}>
+                            <select className={styles["gender-select"]} name="gender" onChange={handleChange} required>
                                 <option value="" disabled >
                                     What is your gender?
                                 </option>
@@ -145,7 +144,7 @@ export default function SignUpAuth0() {
                                 <option value={2}>Female</option>
                                 <option value={3}>Other</option>
                             </select>
-                        </BorderWrapper>
+
                     </div>
                     <div className={`${styles[""]} ${styles[""]}`}>
                         <BorderWrapper borderSize={2}>
