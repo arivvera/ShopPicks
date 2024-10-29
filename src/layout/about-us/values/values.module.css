@@ -1,9 +1,9 @@
 .values,
-.values-cards,
-.values-card,
+.cards,
+.card,
 .core-values-items,
 .core-values-item,
-.core-values-item-figure {
+.core-values-item-icon {
     display: flex;
 }
 
@@ -13,36 +13,36 @@
     margin-top: 81px;
 }
 
-.values-cards {
+.cards {
     margin-top: 37px;
     gap: 51px;
 }
 
-.values-card {
+.card {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 11px;
     border-radius: 18px;
-    max-width: 613.44px;
-    min-height: 320.52px;
+    width: 613.44px;
+    height: 320.52px;
     padding: 48.8px 30px;
     background-color: var(--color-background);
 }
 
-.values-card-head {
+.card-header {
     font-size: 32px;
     font-weight: 600;
     line-height: 41px;
 }
 
-.values-card-body {
+.card-body {
     font-size: 20px;
     font-weight: 300;
     line-height: 26px;
 }
 
-.core-values-title {
+.core-values-header {
     margin-top: 176.48px;
     font-size: 64px;
     font-weight: 700;
@@ -61,10 +61,10 @@
     align-items: center;
 }
 
-.core-values-item-figure {
+.core-values-item-icon {
     justify-content: center;
     align-items: center;
-    width: 196px;
+    width: 195px;
     height: 196px;
     border-radius: 50%;
     background: linear-gradient(139.55deg, #9A299A 18.1%, #FD9E17 121.76%);

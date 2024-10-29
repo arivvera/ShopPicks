@@ -9,75 +9,75 @@ import coreValueQualityIcon from "@/app/assets/images/about-us/core-value-qualit
 import coreValueSustainabilityIcon from "@/app/assets/images/about-us/core-value-sustainability-icon.svg";
 
 const CoreValuesItem = ({
-    imageSrc, 
+    icon, 
     name,
 } : {
-    imageSrc: string, 
+    icon: string, 
     name: string,
 }) => {
     return (
         <div className={styles["core-values-item"]}>
-            <div className={styles["core-values-item-figure"]}>
-                <Image src={imageSrc} alt={"core values item image"} width={94}/>
+            <div className={styles["core-values-item-icon"]}>
+              <Image src={icon} alt={""} width={94}/>
             </div>
             <div className={styles["core-values-item-name"]}>
-                <p>
-                    {name}
-                </p>
+              <p>
+                {name}
+              </p>
             </div>
         </div>
     );
 }
 
-const OurValuesCard = React.forwardRef(({ 
-    chartHead, 
-    chartBody 
+const Card = React.forwardRef(({ 
+    cardHead, 
+    cardBody 
 } : { 
-    chartHead: string; 
-    chartBody: string 
+    cardHead: string; 
+    cardBody: string 
 }, ref: React.Ref<HTMLDivElement>) => {
     return (
         <BorderWrapper borderSize={3}>
-            <div ref={ref} className={styles["values-card"]}>
-                <div className={styles["values-card-head"]}>
-                    <p>{chartHead}</p>
+            <div ref={ref} className={styles.card}>
+                <div className={styles["card-header"]}>
+                    <p>{cardHead}</p>
                 </div>
-                <div className={styles["values-card-body"]}>
-                    <p>{chartBody}</p>
+                <div className={styles["card-body"]}>
+                    <p>{cardBody}</p>
                 </div>
             </div>
         </BorderWrapper>
     );
 });
 
-OurValuesCard.displayName = 'OurValuesCard';
+Card.displayName = 'Card';
 
 export default function Values() {
     return (
-        <div className={styles["values-container"]}>
-            <div className={`${styles["values"]} frame-container`}>
-                <div className={styles["values-cards"]}>
-                    <OurValuesCard 
-                        chartHead="Our mission" 
-                        chartBody="We empower people with cutting-edge technology that merges innovation with style, making the future accessible today. We aim to provide an exceptional shopping experience by offering products that enhance everyday life, delivering convenience, creativity, and excitement through advanced design and functionality." 
+        <div className={styles.container}>
+            <div className={`${styles.values} frame-container`}>
+                <div className={styles.cards}>
+                    <Card 
+                      cardHead="Our mission" 
+                      cardBody="We empower people with cutting-edge technology that merges innovation with style, making the future accessible today. We aim to provide an exceptional shopping experience by offering products that enhance everyday life, delivering convenience, creativity, and excitement through advanced design and functionality." 
                     />
-                    <OurValuesCard 
-                        chartHead="Our vision" 
-                        chartBody="We pursue to become the world’s leading destination for futuristic products, continuously pushing the boundaries of technology and design. We strive to inspire a global community of forward-thinkers, connecting people with the tools they need to thrive in tomorrow’s world, today." 
+                    <Card 
+                      cardHead="Our vision" 
+                      cardBody="We pursue to become the world’s leading destination for futuristic products, continuously pushing the boundaries of technology and design. We strive to inspire a global community of forward-thinker s, connecting people with the tools they need to thrive in tomorrow’s world, today." 
                     />
                 </div>
                 <div className={styles["core-values"]}>
-                    <div className={`${styles["core-values-title"]} gradient-text-1`}>
+                    <div className={`${styles["core-values-header"]} gradient-text-1`}>
                         <p>
                             Our core values
                         </p>
                     </div>
                     <div className={styles["core-values-items"]}>
-                        <CoreValuesItem imageSrc={coreValueTechnologyIcon} name="Technology"/>
-                        <CoreValuesItem imageSrc={coreValueQualityIcon} name="Quality"/>
-                        <CoreValuesItem imageSrc={coreValueCustomizationIcon} name="Customization"/>
-                        <CoreValuesItem imageSrc={coreValueInnovationIcon} name="Innovation"/>
-                        <CoreValuesItem imageSrc={coreValueSustainabilityIcon} name="Sustainability"/>
+                        <CoreValuesItem icon={coreValueTechnologyIcon} name="Technology"/>
+                        <CoreValuesItem icon={coreValueQualityIcon} name="Quality"/>
+                        <CoreValuesItem icon={coreValueCustomizationIcon} name="Customization"/>
+                        <CoreValuesItem icon={coreValueInnovationIcon} name="Innovation"/>
+                        <CoreValuesItem icon={coreValueSustainabilityIcon} name="Sustainability"/>
                     </div>
                 </div>
             </div>
