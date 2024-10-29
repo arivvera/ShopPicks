@@ -1,6 +1,6 @@
 .factor,
-.factor-cards,
-.factor-card,
+.cards,
+.card,
 .foot-note,
 .foot-note-icon {
     display: flex;
@@ -11,7 +11,7 @@
     align-items: center;
 }
 
-.factor-title {
+.factor-header {
     font-size: 40px;
     font-weight: 700;
     line-height: 86.5px;
@@ -20,12 +20,12 @@
     color: #D9D9D9;
 }
 
-.factor-cards {
+.cards {
     margin-top: 37px;
     gap: 56px;
 }
 
-.factor-card {
+.card {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -37,13 +37,13 @@
     background-color: var(--color-background);
 }
 
-.factor-card-head {
+.card-header {
     font-size: 32px;
     font-weight: 600;
     line-height: 41px;
 }
 
-.factor-card-body {
+.card-body {
     font-size: 20px;
     font-weight: 300;
     line-height: 26px;
@@ -74,10 +74,7 @@
 }
 
 .foot-note-text {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 300;
     line-height: 45px;
-}
-.factor-container{
-
 }
