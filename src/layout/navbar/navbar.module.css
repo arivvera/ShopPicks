@@ -55,6 +55,15 @@
     border-radius: 108px;
 }
 
+.navbar-link-logout a {
+    color: #030703;
+    background-color: #F0EAF9;
+    padding: 14px 30.5px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 108px;
+}
+
 .shopping-cart-button,
 .wishlist-button {
     width: 46.6px;

@@ -6,10 +6,6 @@ import {useUser} from "@auth0/nextjs-auth0/client";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDoorOpen} from "@fortawesome/free-solid-svg-icons/faDoorOpen";
 
-
-
-
-
 const Welcome: React.FC = () => {
     const { user, isLoading } = useUser();
     return (

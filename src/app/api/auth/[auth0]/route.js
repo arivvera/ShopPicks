@@ -8,14 +8,16 @@ import {handleAuth, handleLogin} from '@auth0/nextjs-auth0';
  * /api/auth/callback: The route Auth0 will redirect the user to after a successful login.
  * /api/auth/me: The route to fetch the user profile from.
  * **/
-export const GET = handleAuth({
-    login: handleLogin({
-        returnTo: "/register",
-    }),
-    signup: handleLogin({
-        authorizationParams: {
-            screen_hint: "signup",
-        },
-        returnTo: "/",
-    }),
-});
+// export const GET = handleAuth({
+//     login: handleLogin({
+//         returnTo: "/register",
+//     }),
+//     signup: handleLogin({
+//         authorizationParams: {
+//             screen_hint: "signup",
+//         },
+//         returnTo: "/",
+//     }),
+// });
+
+export const GET = handleAuth();
