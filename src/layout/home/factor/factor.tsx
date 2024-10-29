@@ -25,7 +25,7 @@ const Card = React.forwardRef(({
     );
 });
 
-Card.displayName = 'FactorCard';
+Card.displayName = 'Card';
 
 export default function Factor() {
   return (
