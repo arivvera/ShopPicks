@@ -51,15 +51,14 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${poppins.className}`}>
-        <Navbar />
-
-        <UserProvider>
-            <Welcome />
-        {children}
-        </UserProvider>
-        <Footer />
-      </body>
+      <UserProvider>
+        <body className={`${poppins.className}`}>
+          <Navbar />
+          {/* <Welcome /> */}
+          {children}
+          <Footer />
+        </body>
+      </UserProvider>
     </html>
   );
 }
