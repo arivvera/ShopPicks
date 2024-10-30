@@ -25,8 +25,11 @@
 
 }
 .questions-section{
-    font-family: inherit;
-    width: 1075px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
 }
 .questions-section li {
     list-style: none;
@@ -59,8 +62,8 @@ h1.title-gradient{
     font-size: 20px;
     line-height: 24px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
