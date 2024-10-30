@@ -13,7 +13,7 @@ const Welcome: React.FC = () => {
             {isLoading ? (
                 <p className={style["right-locate"]}>Loading...</p>
             ) : user ? (
-                <p className={style["right-locate"]}>Welcome, {user.name}!
+                <p className={style["right-locate"]}>Welcome, {user.name}
                     <a className={style["logout-link"]} href={'/api/auth/logout'}> Logout
                     <FontAwesomeIcon icon={faDoorOpen} size={"1x"} />
                     </a>

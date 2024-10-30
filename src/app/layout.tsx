@@ -54,7 +54,7 @@ export default function RootLayout({
       <UserProvider>
         <body className={`${poppins.className}`}>
           <Navbar />
-          {/* <Welcome /> */}
+           <Welcome />
           {children}
           <Footer />
         </body>
