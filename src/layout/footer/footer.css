@@ -10,6 +10,7 @@
     justify-content: space-between;
     font-size: 20px;
     color: #9C9E9F;
+    font-family: inherit;
 }
 
 .footer-block-paragraph {
@@ -41,16 +42,25 @@
     background: #0D1018;
     width: 100%; /* This property should be augmented as more social network icons are added*/
 }
-
-.footer-group-item  p{
-    margin-bottom: 10px;
+.social-network-icon{
+    color: #9C9E9F;
 }
 
+.footer-group-item  p{
+    margin-bottom: 3rem;
+}
+.address-p{
+    width: max-content;
+}
+.footer-copyright{
+    margin-top: 6rem;
+}
 .social-network-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2px;
+    margin-top: 20px;
     border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
     background: linear-gradient(to right, #830DBA, #FD9E17);
     border-radius: 108px;
