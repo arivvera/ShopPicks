@@ -62,13 +62,13 @@ export default function Navbar () {
                       <NavbarLink href="/faq">FAQ</NavbarLink>
                       <NavbarLink href="/contact-us">Contact us</NavbarLink>
                       {
-                        ! user ? (
+                         user ? (
+                             <LogoutLink />
+                         ) : (
                           <>
                             <LoginLink />
                             <SignupLink />
                           </>
-                        ) : (
-                          <LogoutLink />
                         )
                       }
                   </div>
@@ -103,7 +103,7 @@ export default function Navbar () {
           } {
             user ? (
               <UserInfoBanner>
-                <p>Welcome {user.name}!</p>
+                <p className={styles["hidden-item"]}>Welcome {user.name}!</p>
               </UserInfoBanner>
             ) : null
           }

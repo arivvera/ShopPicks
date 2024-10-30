@@ -43,7 +43,10 @@ const Register = () => {
     }
 
     if (alreadySigned === null) {
-        return <div className={styles.loadingText}>Loading registration state...</div>;
+        return (<>
+           <div><small className={styles.loadingText}>Issues loading registration state... 😵</small></div>
+            </>
+        );
     }
 
     return (
