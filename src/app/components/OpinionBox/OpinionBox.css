@@ -1,0 +1,159 @@
+/* section for users opinion. It has some different boxes*/
+.section-opinions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.section-opinions-title {
+    background: linear-gradient(to right, #8200BA, #FD9E17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 86px;
+    width: 80%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.opinion-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.opinion-boxes-item {
+    width: 369px;
+    height: 376px;
+    background-color: #1F2123;
+    border: solid transparent;
+    border-radius: 18px;
+    padding: 20px;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: wave 3px transparent;
+}
+
+.avatar-container-inner{
+    width: 70px;
+    height: 73px;
+    background:  rgba(152, 41, 152, 0.38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgba(152, 41, 152, 0.38);
+    border-radius: 50%;
+}
+.avatar-container-middle{
+    width: 91px;
+    height: 94px;
+    background:  rgba(152, 41, 152, 0.62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgba(152, 41, 152, 0.62);
+    border-radius: 50%;
+}
+.avatar-container-outer{
+    width: 109px;
+    height: 113px;
+    background: rgba(152, 41, 152, 0.80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px #623063;
+    border-radius: 50%;
+}
+
+.stars {
+    color: orange;
+    font-size: 1.2em;
+}
+
+
+.review {
+    margin-top: 10px;
+}
+.opinion-avatar-data{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.opinion-avatar-data h3{
+    text-align: left;
+}
+.opinion-data-evaluation{
+    display: inline-flex;
+    align-items: baseline;
+}
+.opinion-data-date{
+    margin-left: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 28px;
+}
+.opinion-boxes-review{
+    width: 298px;
+    height: 204px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 25px;
+    text-align: left;
+}
+
+.opinion-section-navbar{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.opinion-navbar-link{
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.opinion-navbar-link:hover{
+    color: rgba(241, 12, 241, 0.62);
+}
+.opinion-navbar-link:active{
+    color: rgba(152, 41, 152, 0.62);
+}
+
+.opinion-boxes-picture {
+    border-radius: 50%;
+}
+
+.group-triple-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.carousel.carousel-slider .control-arrow {
+    display: none;
+}
+.carousel .carousel-status{
+    display: none;
+}

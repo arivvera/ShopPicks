@@ -1,0 +1,104 @@
+.team,
+.team-members,
+.team-members-a,
+.team-members-b {
+    display: flex;
+}
+
+.team {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 65px;
+    min-height: 1385px;
+}
+
+.team-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 86.5px;
+    margin-top: 191px;
+}
+
+.team-members {
+    flex-direction: column;
+    gap: 74px;
+}
+
+.team-members-a,
+.team-members-b {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 46px;
+}
+
+.team-member-card-role {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.team-member-card-name {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.background-shapes {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.background-shape {
+    position: absolute;
+    border-radius: 18px;
+}
+
+.background-shape-1,
+.background-shape-2,
+.background-shape-3 {
+    background-color: var(--color-global-pink);
+}
+
+.background-shape-4,
+.background-shape-5 {
+   background-color: #121721; 
+}
+
+.background-shape-1 {
+    width: 638px;
+    height: 230px;
+    top: 540px;
+    left: -960px;
+}
+
+.background-shape-2 {
+    width: 500px;
+    height: 257px;
+    top: 1063px;
+    right: -250px;
+}
+
+.background-shape-3 {
+    width: 610px;
+    height: 331px;
+    top: 250px;
+    right: -1060px;
+}
+
+.background-shape-4 {
+    width: 378px;
+    height: 342px;
+    top: 1063px;
+    left: -836px;
+}
+
+.background-shape-5 {
+    width: 500px;
+    height: 519px;
+    top: 519px;
+    right: -577px;
+}

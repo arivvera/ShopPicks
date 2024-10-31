@@ -1,0 +1,77 @@
+
+
+
+export const sampleProducts = [
+    {
+        id:1,
+        img: "sample1.png",
+        eval: 4.5,
+        price: 29.99,
+        name: "Product 1",
+        fav: true,
+    },
+    {
+        id:2,
+        img: "sample3.png",
+        eval: 3.0,
+        price: 19.99,
+        name: "Product 2",
+        fav: false,
+    },
+    {
+        id:3,
+        img: "sample2.png",
+        eval: 5.0,
+        price: 49.99,
+        name: "Product 3",
+        fav: true,
+    },
+    {
+        id:4,
+        img: "sample4.png",
+        eval: 2.5,
+        price: 15.99,
+        name: "Product 4",
+        fav: false,
+    },
+    {
+        id:5,
+        img: "sample1.png",
+        eval: 4.0,
+        price: 25.00,
+        name: "Product 5",
+        fav: true,
+    },
+    {
+        id:6,
+        img: "sample2.png",
+        eval: 3.5,
+        price: 35.00,
+        name: "Product 6",
+        fav: false,
+    },
+    {
+        id:7,
+        img: "sample3.png",
+        eval: 4.8,
+        price: 59.99,
+        name: "Product 7",
+        fav: true,
+    },
+    {
+        id:8,
+        img: "sample4.png",
+        eval: 2.0,
+        price: 9.99,
+        name: "Product 8",
+        fav: false,
+    },
+    {
+        id:9,
+        img: "sample1.png",
+        eval: 3.8,
+        price: 39.99,
+        name: "Product 9",
+        fav: true,
+    },
+];

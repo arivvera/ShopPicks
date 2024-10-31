@@ -1,0 +1,121 @@
+.pricing,
+.pricing-content,
+.pricing-plan,
+.pricing-cta a,
+.pricing-plan-benefits ul,
+.pricing-plan-benefits li,
+.pricing-plan-cta a {
+    display: flex;
+}
+
+
+.pricing {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 153px;
+    padding-bottom: 160px;
+}
+
+.pricing-content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.pricing-title {
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 108.5px;
+}
+
+.pricing-text {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 27px;
+    max-width:  490px;
+    margin-top: 35px;
+}
+
+.pricing-cta {
+    margin-top: 45px;
+}
+
+.pricing-cta a {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 52px;
+    border: 1px solid var(--color-global-pink);
+    border-radius: 39px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pricing-plan {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 422px;
+    height: 417px;
+    background: var(--color-global-gray);
+    padding: 45.37px 24.02px 33.63px;
+    border-radius: 18px;
+  }
+  
+  .pricing-plan-title {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+  
+  .pricing-plan-price {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 28px;
+  }
+  
+  .pricing-plan-benefits {
+    margin-top: 22px;
+  }
+  
+  .pricing-plan-benefits ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .pricing-plan-benefits li {
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+  
+  .pricing-plan-cta {
+    margin-top: 16px;
+    align-self: center;
+  }
+  
+  .pricing-plan-cta a {
+    justify-content: center;
+    align-items: center;
+    width: 374.54px;
+    height: 58px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    background: #404040;
+    border-radius: 39px;
+  }
+
+.pricing-container {
+
+}

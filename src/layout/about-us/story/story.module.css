@@ -1,0 +1,87 @@
+.story,
+.story-content {
+    display: flex;
+}
+
+.story {
+    align-items: center;
+    position: relative;
+    min-height: 647px;
+    margin-top: 106px;
+}
+
+.story-content {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 857px;
+}
+
+.story-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 86.5px;
+}
+
+.story-text {
+    margin-top: 34px;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.poster {
+    position: absolute;
+    left: 805px;
+    bottom: 0;
+    z-index: -1;
+    width: 993px;
+    height: 726px;
+}
+
+.poster-image {
+    position: absolute;
+    bottom: -15px;
+    left: 205px;
+}
+
+.poster-shapes {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.poster-shape {
+    position: absolute;
+    border-radius: 18px;
+}
+
+.poster-shape-1,
+.poster-shape-3 {
+    background-color: var(--color-global-pink);
+}
+
+.poster-shape-1 {
+    width: 368px;
+    height: 267px;
+    bottom: 352px;
+    left: 234px;
+}
+
+.poster-shape-2 {
+    width: 423px;
+    height: 386px;
+    bottom: 130px;
+    left: 369px;
+    background: #EFF7FF0F;
+    z-index: -1;
+}
+
+.poster-shape-3 {
+    width: 422px;
+    height: 301px;
+    bottom: 0;
+    left: 537px;
+}

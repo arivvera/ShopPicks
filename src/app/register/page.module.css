@@ -1,0 +1,27 @@
+.unauthorized{
+    margin: 2rem 10rem 2rem 2rem;
+    color: #9A299A;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1F2123;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 18px;
+
+}
+
+.loadingText{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 140px;
+    padding: 10px;
+    color: #9A299A;
+}
+

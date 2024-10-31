@@ -1,0 +1,13 @@
+.right-locate{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+.logout-link{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: mediumvioletred;
+}

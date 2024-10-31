@@ -1,0 +1,67 @@
+
+/*Footer specific styles */
+.footer-section {
+    width: 100%;
+    height: 531px;
+    padding: 10%;
+    background-color:rgba(31, 33, 35, 0.31);
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #9C9E9F;
+    font-family: inherit;
+}
+
+.footer-block-paragraph {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: auto;
+    line-height: 30px;
+}
+
+.footer-group-blocks {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-group-item {
+    display: flex;
+    flex-direction: column;
+    height: 264px;
+    width: 30%;
+    line-height: 24px;
+}
+.social-network-icons{
+    border-radius: 108px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    background: #0D1018;
+    width: 100%; /* This property should be augmented as more social network icons are added*/
+}
+.social-network-icon{
+    color: #9C9E9F;
+}
+
+.footer-group-item  p{
+    margin-bottom: 3rem;
+}
+.address-p{
+    width: max-content;
+}
+.footer-copyright{
+    margin-top: 6rem;
+}
+.social-network-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin-top: 20px;
+    border-image: linear-gradient(to right, #830DBA, #FD9E17) 1;
+    background: linear-gradient(to right, #830DBA, #FD9E17);
+    border-radius: 108px;
+}
